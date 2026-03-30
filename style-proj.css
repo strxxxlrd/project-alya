@@ -1,0 +1,286 @@
+@font-face {
+    font-family: 'medium';
+    src: url(./fonts/InterTight-Medium.woff2);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url(./fonts/InterTight-Regular.woff2);
+    font-weight: 400;
+}
+
+
+.page-info {
+  position: relative;
+  border-top: 1px solid rgba(249,249,249,0.15);
+  padding: 2rem 0 0;
+}
+
+.page-info::before,
+.page-info::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 14px;
+  background: rgba(249,249,249,0.15);
+}
+
+.page-info::before { left: 0; }
+.page-info::after  { right: 0; }
+
+
+
+
+.page {
+  display: flex;
+  padding: clamp(1rem, 2.08vw, 2.5rem);
+  gap:1.25rem;
+}
+
+.page-img img:last-child {
+  border-radius: 1.25rem;
+border: 1px solid rgba(249, 249, 249, 0.40);
+display: flex;
+padding: 0.25rem;
+flex-direction: column;
+align-items: flex-start;
+gap: 0.625rem;
+align-self: stretch;
+}
+
+.lini {
+  width: 100%;
+  height: 1px;
+  
+  margin: 10rem 0 0;
+}
+.sorry {
+  position: relative;
+  padding: clamp(1rem, 2.08vw, 2.5rem);
+}
+
+.page-img {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.page-img img {
+  width: 100%;
+  display: block;
+}
+
+.page-info {
+  width: 25%;
+  gap: 3.75rem;
+}
+
+.page-title p,
+.page-title span {
+  margin: 0.2rem 0;
+  line-height: 1;
+}
+
+
+.page-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem; /* відступ між блоками */
+}
+.abt-project {
+  padding: 0 2rem;           /* отступы слева и справа от всего блока */
+  margin-bottom: 4rem;         /* если нужно отступ снизу */
+  margin-top: 20rem;
+}
+
+.proj-image {
+  display: flex;
+  gap: 1rem;                 /* расстояние между картинками */
+  align-items: flex-start;     /* выравнивание по верху */
+  height: 55vh;               /* занимаем почти всю высоту экрана */
+  max-height: 920px;           /* ограничиваем максимальную высоту (можно убрать или изменить) */
+}
+
+.proj-img-wrap1,
+.proj-img-wrap2,
+.proj-img-wrap3 {
+  flex: 1;                     /* все по умолчанию делят пространство */
+  height: 100%;
+  border-radius: 12px;         /* по желанию */
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.proj-img-wrap1 img,
+.proj-img-wrap2 img,
+.proj-img-wrap3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;           /* важно! сохраняет пропорции и заполняет контейнер */
+  display: block;
+}
+
+/* Делаем первое и третье изображения шире, чем среднее */
+.proj-img-wrap1 {
+  flex: 1.35;                  /* шире среднего */
+}
+
+.proj-img-wrap3 {
+  flex: 1.35;                  /* шире среднего */
+}
+
+.proj-img-wrap2 {
+  flex: 0.6;                  /* уже, чем первое и третье */
+}
+
+
+.page-title span{
+  font-style: normal;
+font-weight: 400;
+line-height: 130%; /* 1.7875rem */
+letter-spacing: -0.01375rem;
+opacity: 0.6;
+}
+
+.page-title p{
+  font-style: normal;
+font-weight: 500;
+line-height: 130%; /* 1.95rem */
+letter-spacing: -0.015rem
+}
+
+
+
+.page-title{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: -1rem;
+align-self: stretch;
+}
+
+
+
+
+
+
+.proj-img-wrap3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 20px;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.proj-num {
+  margin-top: 1rem;
+  font-size: 1rem;
+  
+  font-family: "medium";
+}
+
+.proj-type {
+  margin-top: 1rem;
+  position: absolute;
+  top: 1rem; right: 0;
+  font-size: 1rem;
+  
+  font-family: "medium";
+}
+
+.proj-logo {
+ color: var(--White, #F9F9F9);
+/* Desktop/H1 */
+font-size: 4.75rem;
+font-style: normal;
+font-weight: 500;
+line-height: 120%;
+letter-spacing: -0.0875rem;
+margin-top: 0;
+margin-bottom: -13px;
+}
+
+
+.proj-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+
+
+
+
+.proj-script {
+  display: block;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.proj-logo {
+  flex-shrink: 0;
+}
+
+
+
+
+.proj-bottom {
+  font-family: "medium";
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  margin-top: auto;
+}
+
+.proj-thumb {
+  width: 120px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.proj-thumb img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+
+
+.proj-img-wrap3 {
+  position: relative;
+  border-top: 1px solid rgba(249,249,249,0.15);
+  padding-top: 24px; /* відступ від лінії до контенту */
+}
+
+.proj-img-wrap3::before,
+.proj-img-wrap3::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 14px;
+  background: rgba(249,249,249,0.15);
+}
+
+.proj-img-wrap3::before { left: 0; }
+.proj-img-wrap3::after  { right: 0; }
+
+.proj-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.proj-img-wrap3 {
+  padding: 16px 0 0;
+}
+.proj-img-wrap3 {
+  border-radius: 0;
+}

@@ -14,14 +14,23 @@ if (loader) {
             clearInterval(interval);
             setTimeout(() => {
                 loader.style.opacity = '0';
-                setTimeout(() => { loader.style.display = 'none'; }, 600);
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                    const first2 = document.querySelector('.first2');
+                    if (first2) first2.classList.add('visible');
+
+                    // Показуємо банер після лоадера
+                    const banner = document.getElementById('cookie-banner');
+                    if (banner && !document.cookie.split('; ').some(r => r.startsWith('cookie_consent='))) {
+                        banner.classList.add('show');
+                    }
+                }, 600);
             }, 300);
         }
         if (loaderPercent) loaderPercent.textContent = Math.floor(progress) + '%';
         if (loaderBar) loaderBar.style.width = progress + '%';
     }, 40);
 }
-
 // ================================================
 // COOKIE BANNER
 // ================================================
@@ -132,3 +141,5 @@ function toggle(header) {
         header.classList.add('active');
     }
 }
+
+

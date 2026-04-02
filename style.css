@@ -1339,3 +1339,65 @@ height: 0.22775rem;
         display: none;
     }
 }
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .first-screen {
+        background-image: url(./img/mobi/mobile-version.png);
+        background-size: contain;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+
+    .first-screen .first2 {
+        display: none !important;
+    }
+
+    .burger-menu {
+        width: 100vw;
+        height: 100vh;
+        background: #111;
+        padding: 2rem;
+    }
+    .first-screen {
+        min-height: 100vh;
+        overflow: hidden;
+    }
+
+    .hero {
+        min-height: calc(100vh - 4rem);
+        padding-bottom: 3rem;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        margin-top: -5rem;
+    }
+
+    .structure {
+        font-size: 3.75rem !important;
+    }
+
+    .hero section{
+        width: 100%;
+        display: flex;
+        align-items: top;
+        margin-top: 9rem;
+    }
+    .brbr p{
+        justify-content: nowrap;
+    }
+
+    .hero > section:first-child {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+.sixth-image {
+        background-image: url(./img/mobi/mobi-foot.png);
+        background-size: contain;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+
+    .sixth-image img{
+        display: none;
+    }
+}

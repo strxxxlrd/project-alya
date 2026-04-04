@@ -19,6 +19,10 @@
 /* ГЛОБАЛЬНЫЕ СТИЛИ */
 /* ================================================ */
 
+.desktop { display: block; }
+    .mobile { display: none; }
+
+
 a.arr, a.arrow-but {
     display: flex;
     align-items: center;
@@ -111,21 +115,26 @@ a.arr, a.arrow-but {
 
 #cookie-banner {
   position: fixed;
-  top: 20px;
+  bottom: 20px;           /* ← изменили top на bottom */
   right: 20px;
-  left: auto;
-  transform: none;
-  width: 25.875rem;
+  left: auto;             /* центрируем по горизонтали */
+  
+  width: 25.875rem;       /* или max-width: 414px; */
+  max-width: 90vw;        /* чтобы не вылезал на очень узких экранах */
+  
   background: #1a1a1a;
   color: #ddd;
   border-radius: 16px;
   padding: 32px 28px 28px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-  z-index: 9998;
+  z-index: 9999;
   font-family: 'medium';
+  
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.5s ease;
+  transition: all 0.4s ease;   /* изменили transition */
+  
+  
 }
 
 #cookie-banner.show {
@@ -370,7 +379,7 @@ span {
 }
 
 .service-body p {
-    font-size: clamp(0.75rem, 0.9vw, 1rem) !important;
+    font-size: 1.25rem;
     line-height: 1.6;
     margin: 0;
 }
@@ -492,7 +501,7 @@ button.language {
 
 .brbr {
     display: flex;
-    flex-direction: row;
+    flex-direction: row !important;
     align-items: flex-start;
     gap: 0.75rem;
     margin-left: 26.1rem;
@@ -771,7 +780,7 @@ button.language {
 
 .fifth-bottom {
     display: flex;
-    align-items: flex-end;
+    
     gap: 1rem;
 }
 
@@ -836,12 +845,12 @@ button.language {
 }
 
 .fifth-bottom .arr {
-    height: 3.5rem;
+    height: 4.5rem;
 }
 
 .fifth-bottom .arrow-but {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
 }
 
 
@@ -1057,7 +1066,7 @@ button.language {
     display: flex;
     flex-direction: column;
     padding: clamp(1rem, 2.08vw, 2.5rem);
-    border-radius: 0;
+    border-radius: 1rem;
     transform: translateY(-20px) scale(0.95);
     opacity: 0;
     pointer-events: none;
@@ -1069,6 +1078,7 @@ button.language {
     transform: translateY(0) scale(1);
     opacity: 1;
     pointer-events: all;
+    border-radius: 1rem;
 }
 
 .bm-top {
@@ -1221,183 +1231,36 @@ height: 0.22775rem;
     flex-shrink: 0;
 }
 
-.bm-socials {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 8px;
-    margin-top: 12px;
-}
+
+
 
 .bm-social {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 14px;
-    border: 1px solid rgba(249,249,249,0.1);
-    border-radius: 8px;
-    transition: background 0.3s;
+    height: 3rem;
+    background:#111;
+    border-radius: 0.25rem;
+border: 1px solid rgba(249, 249, 249, 0.20);
     text-decoration: none;
+    padding: 0.625rem 2.4375rem;
+    transition: background 0.3s ease;
 }
+
+.bm-social img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+
+
+.bm-social:hover {
+    background: rgba(208, 66, 0, 0.6);
+}
+
 
 .bm-social:hover {
     background: rgba(208,66,0,0.6);
 }
 
-.bm-corner2::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0;
-    width: 0.0285rem;
-height: 0.22775rem;
-    border-top: 1px solid rgba(249,249,249,0.7);
-    border-left: 1px solid rgba(249,249,249,0.7);
-}
-
-.bm-corner2::after {
-    content: '';
-    position: absolute;
-    bottom: 0; right: 0;
-    width: 0.0285rem;
-height: 0.22775rem;
-    border-bottom: 1px solid rgba(249,249,249,0.7);
-    border-right: 1px solid rgba(249,249,249,0.7);
-}
-
-.bm-corner2 {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-}
-
-
-.burger-menu,
-.bm-link {
-    border-radius: 0 !important;
-}
-
-
-
-
-@media (max-width: 768px) {
-    .first-screen {
-        background-image: url(./img/mobi/mobile-version.png);
-        background-size: contain;
-        background-position: top center;
-        background-repeat: no-repeat;
-    }
-
-    .first-screen .first2 {
-        display: none !important;
-    }
-
-    .burger-menu {
-        width: 100vw;
-        height: 100vh;
-        background: #111;
-        padding: 2rem;
-    }
-    .first-screen {
-        min-height: 100vh;
-        overflow: hidden;
-    }
-
-    .hero {
-        min-height: calc(100vh - 4rem);
-        padding-bottom: 3rem;
-        justify-content: space-between;
-        flex-direction: column-reverse;
-        margin-top: -5rem;
-    }
-
-    .structure {
-        font-size: 3.75rem !important;
-    }
-
-    .hero section{
-        width: 100%;
-        display: flex;
-        align-items: top;
-        margin-top: 9rem;
-    }
-    .brbr p{
-        justify-content: nowrap;
-    }
-
-    .hero > section:first-child {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-.sixth-image {
-        background-image: url(./img/mobi/mobi-foot.png);
-        background-size: contain;
-        background-position: top center;
-        background-repeat: no-repeat;
-    }
-
-    .sixth-image img{
-        display: none;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1024px){
-    .first-screen {
-        background-image: url(./img/mobi/mobile-version.png);
-        background-size: contain;
-        background-position: top center;
-        background-repeat: no-repeat;
-    }
-
-    .first-screen .first2 {
-        display: none !important;
-    }
-
-    .burger-menu {
-        width: 100vw;
-        height: 100vh;
-        background: #111;
-        padding: 2rem;
-    }
-    .first-screen {
-        min-height: 100vh;
-        overflow: hidden;
-    }
-
-    .hero {
-        min-height: calc(100vh - 4rem);
-        padding-bottom: 3rem;
-        justify-content: space-between;
-        flex-direction: column-reverse;
-        margin-top: -5rem;
-    }
-
-    .structure {
-        font-size: 3.75rem !important;
-    }
-
-    .hero section{
-        width: 100%;
-        display: flex;
-        align-items: top;
-        margin-top: 9rem;
-    }
-    .brbr p{
-        justify-content: nowrap;
-    }
-
-    .hero > section:first-child {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-.sixth-image {
-        background-image: url(./img/mobi/mobi-foot.png);
-        background-size: contain;
-        background-position: top center;
-        background-repeat: no-repeat;
-    }
-
-    .sixth-image img{
-        display: none;
-    }
-}

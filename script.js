@@ -31,6 +31,22 @@ if (loader) {
         if (loaderBar) loaderBar.style.width = progress + '%';
     }, 40);
 }
+
+window.addEventListener('load', () => {
+    const loader = document.getElementById('loader');
+    setTimeout(() => {
+        loader.style.opacity = '0';
+        setTimeout(() => {
+            loader.style.display = 'none';
+            
+            // показываем куки после лоадера
+            setTimeout(() => {
+                document.getElementById('cookie-banner').classList.add('show');
+            }, 500);
+
+        }, 600);
+    }, 1000);
+});
 // ================================================
 // COOKIE BANNER
 // ================================================

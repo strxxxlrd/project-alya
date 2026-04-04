@@ -42,11 +42,12 @@
     </div>
 
     <section class="first-screen screen">
-        <img  src="./img/first2.jpg" class="first2" alt="">
+        <img src="./img/first2.jpg" class="first2" alt="">
         <header>
-            <img src="./img/lao.jpg" class="LAO" alt="lao">
-
-                <span>Design studio</span>
+            <a href="index.html">
+                <img src="./img/lao.jpg" class="LAO" alt="lao">
+            </a>
+            <span class="desktop">Design studio</span>
             <button class="language">
                 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
                     <circle cx="5" cy="5" r="5" fill="#D04200" />
@@ -63,13 +64,21 @@
             <section>
                 <div class="brbr">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <line x1="1" y1="9.4801" x2="6.23035" y2="9.4801" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" />
-                        <line x1="9.9238" y1="5.86151" x2="9.9238" y2="1.00003" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" />
-                        <line x1="9.9238" y1="19.0001" x2="9.9238" y2="14.1386" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" />
-                        <line x1="13.7695" y1="9.4801" x2="20.9999" y2="9.4801" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" />
+                        <line x1="1" y1="9.4801" x2="6.23035" y2="9.4801" stroke="#F9F9F9" stroke-width="2"
+                            stroke-linecap="round" />
+                        <line x1="9.9238" y1="5.86151" x2="9.9238" y2="1.00003" stroke="#F9F9F9" stroke-width="2"
+                            stroke-linecap="round" />
+                        <line x1="9.9238" y1="19.0001" x2="9.9238" y2="14.1386" stroke="#F9F9F9" stroke-width="2"
+                            stroke-linecap="round" />
+                        <line x1="13.7695" y1="9.4801" x2="20.9999" y2="9.4801" stroke="#F9F9F9" stroke-width="2"
+                            stroke-linecap="round" />
                     </svg>
-                    <p>Лендінги та корпоративні сайти<br />
+                    <p class="desktop">Лендінги та корпоративні сайти<br />
                         для компаній, що хочуть виглядати<br />
+                        сучасно та залучати нових клієнтів
+                    </p>
+                    <p class="mobile">Лендінги та корпоративні сайти для<br />
+                        компаній, що хочуть виглядати<br />
                         сучасно та залучати нових клієнтів
                     </p>
                 </div>
@@ -80,8 +89,10 @@
                     <button class="arr corner-box"><i></i><span>Обговорити проект</span></button>
                     <button class="arrow-but corner-box">
                         <i></i>
-                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17" fill="none">
-                            <path d="M12 1.5L19 8.5M19 8.5L12 15.5M19 8.5H1.5" stroke="#D04200" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17"
+                            fill="none">
+                            <path d="M12 1.5L19 8.5M19 8.5L12 15.5M19 8.5H1.5" stroke="#D04200" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </button>
                 </div>
@@ -91,13 +102,17 @@
 
     <section class="second-screen screen">
         <div class="about-us">
-            <span class="ab-text">[ Про нас ]</span>
+            <span class="ab-text desktop">[ Про нас ]</span>
             <img class="photo1" src="./img/photo.jpg" alt="">
         </div>
         <div class="about">
             <section class="text">
-                <h3>Ми допомагаємо компаніям<br />виглядати професійно в онлайнi</h3>
-                <p>Поєднуємо стратегію, дизайн та розробку,<br />щоб створювати сайти, які працюють на бізнес</p>
+                <h3 class="desktop">Ми допомагаємо компаніям<br />виглядати професійно в онлайнi</h3>
+                <h3 class="mobile">Ми допомагаємо<br />компаніям виглядати<br /> професійно в онлайнi</h3>
+                <p class="desktop">Поєднуємо стратегію, дизайн та розробку,<br />щоб створювати сайти, які працюють на
+                    бізнес</p>
+                <p class="mobile">Поєднуємо стратегію, дизайн та<br /> розробку,щоб створювати сайти,<br /> які працюють
+                    на бізнес</p>
             </section>
             <section class="services">
                 <div class="service-item">
@@ -105,12 +120,46 @@
                         <span class="num">[ 01 ]</span>
                         <span class="title">Односторінковий сайт</span>
                         <span class="icon">
-                            <svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"><g class="icon-g"><line x1="1" y1="11.48" x2="8.23035" y2="11.48" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="11.9238" y1="7.86145" x2="11.9238" y2="0.999968" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="11.9238" y1="23" x2="11.9238" y2="16.1385" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="15.7695" y1="11.48" x2="22.9999" y2="11.48" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /></g></svg>
-                            <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"><line x1="3.82422" y1="19.4105" x2="8.93685" y2="14.2979" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="8.99008" y1="9.12744" x2="4.13828" y2="4.27564" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="19.6952" y1="19.832" x2="14.8434" y2="14.9802" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="14.2676" y1="8.96665" x2="19.3802" y2="3.85401" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /></svg>
+                            <svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none">
+                                <g class="icon-g">
+                                    <line x1="1" y1="11.48" x2="8.23035" y2="11.48" stroke="#F9F9F9" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <line x1="11.9238" y1="7.86145" x2="11.9238" y2="0.999968" stroke="#F9F9F9"
+                                        stroke-width="2" stroke-linecap="round" />
+                                    <line x1="11.9238" y1="23" x2="11.9238" y2="16.1385" stroke="#F9F9F9"
+                                        stroke-width="2" stroke-linecap="round" />
+                                    <line x1="15.7695" y1="11.48" x2="22.9999" y2="11.48" stroke="#F9F9F9"
+                                        stroke-width="2" stroke-linecap="round" />
+                                </g>
+                            </svg>
+                            <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none">
+                                <line x1="3.82422" y1="19.4105" x2="8.93685" y2="14.2979" stroke="#F9F9F9"
+                                    stroke-width="2" stroke-linecap="round" />
+                                <line x1="8.99008" y1="9.12744" x2="4.13828" y2="4.27564" stroke="#F9F9F9"
+                                    stroke-width="2" stroke-linecap="round" />
+                                <line x1="19.6952" y1="19.832" x2="14.8434" y2="14.9802" stroke="#F9F9F9"
+                                    stroke-width="2" stroke-linecap="round" />
+                                <line x1="14.2676" y1="8.96665" x2="19.3802" y2="3.85401" stroke="#F9F9F9"
+                                    stroke-width="2" stroke-linecap="round" />
+                            </svg>
                         </span>
                     </div>
                     <div class="service-body">
-                        <p>Підходить для запуску нового продукту, рекламної кампанії або презентації конкретної послуги.</p>
+                        <p class="desktop">Підходить для запуску нового продукту, рекламної кампанії або<br />
+                            презентації конкретної послуги. Такий сайт допомагає швидко<br />
+                            пояснити пропозицію,показати переваги та привести клієнта до заявки
+                        </p>
+
+                        <p class="mobile">Підходить для запуску нового<br />
+                            продукту, рекламної кампанії<br />
+                            або презентації конкретної<br />
+                            послуги. Такий сайт допомагає<br />
+                            швидко пояснити пропозицію,<br />
+                            показати переваги та привести<br />
+                            клієнта до заявки
+                        </p>
                     </div>
                 </div>
                 <div class="service-item">
@@ -118,12 +167,47 @@
                         <span class="num">[ 02 ]</span>
                         <span class="title">Корпоративний сайт</span>
                         <span class="icon">
-                            <svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"><g class="icon-g"><line x1="1" y1="11.48" x2="8.23035" y2="11.48" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="11.9238" y1="7.86145" x2="11.9238" y2="0.999968" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="11.9238" y1="23" x2="11.9238" y2="16.1385" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="15.7695" y1="11.48" x2="22.9999" y2="11.48" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /></g></svg>
-                            <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"><line x1="3.82422" y1="19.4105" x2="8.93685" y2="14.2979" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="8.99008" y1="9.12744" x2="4.13828" y2="4.27564" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="19.6952" y1="19.832" x2="14.8434" y2="14.9802" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="14.2676" y1="8.96665" x2="19.3802" y2="3.85401" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /></svg>
+                            <svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none">
+                                <g class="icon-g">
+                                    <line x1="1" y1="11.48" x2="8.23035" y2="11.48" stroke="#F9F9F9" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <line x1="11.9238" y1="7.86145" x2="11.9238" y2="0.999968" stroke="#F9F9F9"
+                                        stroke-width="2" stroke-linecap="round" />
+                                    <line x1="11.9238" y1="23" x2="11.9238" y2="16.1385" stroke="#F9F9F9"
+                                        stroke-width="2" stroke-linecap="round" />
+                                    <line x1="15.7695" y1="11.48" x2="22.9999" y2="11.48" stroke="#F9F9F9"
+                                        stroke-width="2" stroke-linecap="round" />
+                                </g>
+                            </svg>
+                            <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none">
+                                <line x1="3.82422" y1="19.4105" x2="8.93685" y2="14.2979" stroke="#F9F9F9"
+                                    stroke-width="2" stroke-linecap="round" />
+                                <line x1="8.99008" y1="9.12744" x2="4.13828" y2="4.27564" stroke="#F9F9F9"
+                                    stroke-width="2" stroke-linecap="round" />
+                                <line x1="19.6952" y1="19.832" x2="14.8434" y2="14.9802" stroke="#F9F9F9"
+                                    stroke-width="2" stroke-linecap="round" />
+                                <line x1="14.2676" y1="8.96665" x2="19.3802" y2="3.85401" stroke="#F9F9F9"
+                                    stroke-width="2" stroke-linecap="round" />
+                            </svg>
                         </span>
                     </div>
                     <div class="service-body">
-                        <p>Підходить для компаній, яким важливо повноцінно представити бізнес в інтернеті.</p>
+                        <p class="desktop">
+                            Підходить для компаній, яким важливо повноцінно представити<br />
+                            бізнес в інтернеті. На такому сайті можна розповісти про компанію,<br />
+                            послуги, проєкти та створити професійний онлайн-імідж
+                        </p>
+
+                        <p class="mobile">
+                            Підходить для компаній, яким<br />
+                            важливо повноцінно представити<br />
+                            бізнес в інтернеті. На такому сайті<br />
+                            можна розповісти про компанію,<br />
+                            послуги, проєкти та створити<br />
+                            професійний онлайн-імідж
+                        </p>
                     </div>
                 </div>
                 <div class="service-item">
@@ -131,12 +215,46 @@
                         <span class="num">[ 03 ]</span>
                         <span class="title">Редизайн сайту</span>
                         <span class="icon">
-                            <svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"><g class="icon-g"><line x1="1" y1="11.48" x2="8.23035" y2="11.48" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="11.9238" y1="7.86145" x2="11.9238" y2="0.999968" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="11.9238" y1="23" x2="11.9238" y2="16.1385" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="15.7695" y1="11.48" x2="22.9999" y2="11.48" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /></g></svg>
-                            <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"><line x1="3.82422" y1="19.4105" x2="8.93685" y2="14.2979" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="8.99008" y1="9.12744" x2="4.13828" y2="4.27564" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="19.6952" y1="19.832" x2="14.8434" y2="14.9802" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="14.2676" y1="8.96665" x2="19.3802" y2="3.85401" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /></svg>
+                            <svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none">
+                                <g class="icon-g">
+                                    <line x1="1" y1="11.48" x2="8.23035" y2="11.48" stroke="#F9F9F9" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <line x1="11.9238" y1="7.86145" x2="11.9238" y2="0.999968" stroke="#F9F9F9"
+                                        stroke-width="2" stroke-linecap="round" />
+                                    <line x1="11.9238" y1="23" x2="11.9238" y2="16.1385" stroke="#F9F9F9"
+                                        stroke-width="2" stroke-linecap="round" />
+                                    <line x1="15.7695" y1="11.48" x2="22.9999" y2="11.48" stroke="#F9F9F9"
+                                        stroke-width="2" stroke-linecap="round" />
+                                </g>
+                            </svg>
+                            <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none">
+                                <line x1="3.82422" y1="19.4105" x2="8.93685" y2="14.2979" stroke="#F9F9F9"
+                                    stroke-width="2" stroke-linecap="round" />
+                                <line x1="8.99008" y1="9.12744" x2="4.13828" y2="4.27564" stroke="#F9F9F9"
+                                    stroke-width="2" stroke-linecap="round" />
+                                <line x1="19.6952" y1="19.832" x2="14.8434" y2="14.9802" stroke="#F9F9F9"
+                                    stroke-width="2" stroke-linecap="round" />
+                                <line x1="14.2676" y1="8.96665" x2="19.3802" y2="3.85401" stroke="#F9F9F9"
+                                    stroke-width="2" stroke-linecap="round" />
+                            </svg>
                         </span>
                     </div>
                     <div class="service-body">
-                        <p>Підходить, якщо сайт вже існує, але виглядає застаріло або незручний у використанні.</p>
+                        <p class="desktop">
+                            Підходить, якщо сайт вже існує, але виглядає застаріло або незручний<br />
+                            у використанні. Ми оновлюємо структуру, дизайн та робимо сайт<br />
+                            більш зрозумілим для користувачів
+                        </p>
+                        <p class="mobile">
+                            Підходить, якщо сайт вже існує,<br />
+                            але виглядає застаріло або<br />
+                            незручний у використанні.<br />
+                            Ми оновлюємо структуру, дизайн<br />
+                            та робимо сайт більш зрозумілим<br />
+                            для користувачів
+                        </p>
                     </div>
                 </div>
             </section>
@@ -145,28 +263,179 @@
 
     <section class="third-screen screen" id="third">
         <div class="process">
-            <span class="ab-text">[ Процеси ]</span>
+            <span class="ab-text desktop">[ Процеси ]</span>
         </div>
         <div class="about3">
             <section class="text3">
-                <h2>Прозорий процес без хаосу. Ви знаєте, що<br />відбувається на кожному етапі. Завжди є<br />конкретний дедлайн</h2>
+                <h2 class="desktop">
+                Прозорий процес без хаосу. Ви знаєте, що<br />відбувається на кожному етапі. Завжди
+                є<br />конкретний дедлайн
+                </h2>
+              <h2 class="mobile">
+                Прозорий процес без<br />
+                хаосу. Ви знаєте, що<br />
+                відбувається на<br />
+                кожному етапі. 
+                <div style="opacity: 0.4;font-weight: 400; font-size: 1.25rem;">[Завжди є конкретний дедлайн]</div>
+                </h2>
             </section>
             <section class="services3">
                 <div class="service-item">
-                    <div class="service-header" onclick="toggle(this)"><span class="num">[ 01 ]</span><span class="title">Стратегія</span><span class="icon"><svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"><g class="icon-g"><line x1="1" y1="11.48" x2="8.23035" y2="11.48" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="11.9238" y1="7.86145" x2="11.9238" y2="0.999968" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="11.9238" y1="23" x2="11.9238" y2="16.1385" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="15.7695" y1="11.48" x2="22.9999" y2="11.48" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /></g></svg><svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"><line x1="3.82422" y1="19.4105" x2="8.93685" y2="14.2979" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="8.99008" y1="9.12744" x2="4.13828" y2="4.27564" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="19.6952" y1="19.832" x2="14.8434" y2="14.9802" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="14.2676" y1="8.96665" x2="19.3802" y2="3.85401" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /></svg></span></div>
-                    <div class="service-body"><p>Аналізуємо бізнес, цільову аудиторію та конкурентів. Формуємо основу майбутнього сайту</p></div>
+                    <div class="service-header" onclick="toggle(this)"><span class="num">[ 01 ]</span><span
+                            class="title">Стратегія</span><span class="icon"><svg class="icon-plus"
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none">
+                                <g class="icon-g">
+                                    <line x1="1" y1="11.48" x2="8.23035" y2="11.48" stroke="#F9F9F9" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <line x1="11.9238" y1="7.86145" x2="11.9238" y2="0.999968" stroke="#F9F9F9"
+                                        stroke-width="2" stroke-linecap="round" />
+                                    <line x1="11.9238" y1="23" x2="11.9238" y2="16.1385" stroke="#F9F9F9"
+                                        stroke-width="2" stroke-linecap="round" />
+                                    <line x1="15.7695" y1="11.48" x2="22.9999" y2="11.48" stroke="#F9F9F9"
+                                        stroke-width="2" stroke-linecap="round" />
+                                </g>
+                            </svg><svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none">
+                                <line x1="3.82422" y1="19.4105" x2="8.93685" y2="14.2979" stroke="#F9F9F9"
+                                    stroke-width="2" stroke-linecap="round" />
+                                <line x1="8.99008" y1="9.12744" x2="4.13828" y2="4.27564" stroke="#F9F9F9"
+                                    stroke-width="2" stroke-linecap="round" />
+                                <line x1="19.6952" y1="19.832" x2="14.8434" y2="14.9802" stroke="#F9F9F9"
+                                    stroke-width="2" stroke-linecap="round" />
+                                <line x1="14.2676" y1="8.96665" x2="19.3802" y2="3.85401" stroke="#F9F9F9"
+                                    stroke-width="2" stroke-linecap="round" />
+                            </svg></span></div>
+                    <div class="service-body">
+                        <p class="desktop">
+                            Аналізуємо бізнес, цільову аудиторію та конкурентів.<br />
+                            Формуємо основу майбутнього сайту
+                        </p>
+                        <p class="mobile">
+                            Аналізуємо бізнес, цільову<br />
+                            аудиторію та конкурентів.<br />
+                            Формуємо основу<br />
+                            майбутнього сайту
+                        </p>
+                    </div>
                 </div>
                 <div class="service-item">
-                    <div class="service-header" onclick="toggle(this)"><span class="num">[ 02 ]</span><span class="title">Структура</span><span class="icon"><svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"><g class="icon-g"><line x1="1" y1="11.48" x2="8.23035" y2="11.48" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="11.9238" y1="7.86145" x2="11.9238" y2="0.999968" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="11.9238" y1="23" x2="11.9238" y2="16.1385" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="15.7695" y1="11.48" x2="22.9999" y2="11.48" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /></g></svg><svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"><line x1="3.82422" y1="19.4105" x2="8.93685" y2="14.2979" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="8.99008" y1="9.12744" x2="4.13828" y2="4.27564" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="19.6952" y1="19.832" x2="14.8434" y2="14.9802" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="14.2676" y1="8.96665" x2="19.3802" y2="3.85401" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /></svg></span></div>
-                    <div class="service-body"><p>Розробляємо структуру сторінок та логіку навігації</p></div>
+                    <div class="service-header" onclick="toggle(this)"><span class="num">[ 02 ]</span><span
+                            class="title">Структура</span><span class="icon"><svg class="icon-plus"
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none">
+                                <g class="icon-g">
+                                    <line x1="1" y1="11.48" x2="8.23035" y2="11.48" stroke="#F9F9F9" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <line x1="11.9238" y1="7.86145" x2="11.9238" y2="0.999968" stroke="#F9F9F9"
+                                        stroke-width="2" stroke-linecap="round" />
+                                    <line x1="11.9238" y1="23" x2="11.9238" y2="16.1385" stroke="#F9F9F9"
+                                        stroke-width="2" stroke-linecap="round" />
+                                    <line x1="15.7695" y1="11.48" x2="22.9999" y2="11.48" stroke="#F9F9F9"
+                                        stroke-width="2" stroke-linecap="round" />
+                                </g>
+                            </svg><svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none">
+                                <line x1="3.82422" y1="19.4105" x2="8.93685" y2="14.2979" stroke="#F9F9F9"
+                                    stroke-width="2" stroke-linecap="round" />
+                                <line x1="8.99008" y1="9.12744" x2="4.13828" y2="4.27564" stroke="#F9F9F9"
+                                    stroke-width="2" stroke-linecap="round" />
+                                <line x1="19.6952" y1="19.832" x2="14.8434" y2="14.9802" stroke="#F9F9F9"
+                                    stroke-width="2" stroke-linecap="round" />
+                                <line x1="14.2676" y1="8.96665" x2="19.3802" y2="3.85401" stroke="#F9F9F9"
+                                    stroke-width="2" stroke-linecap="round" />
+                            </svg></span></div>
+                    <div class="service-body">
+                        <p class="desktop">
+                            Формуємо логіку сторінок, сценарій користувача<br />
+                            та створюємо прототип майбутнього сайту
+                        </p>
+                        <p class="mobile">
+                            Формуємо логіку сторінок,<br />
+                            сценарій користувача<br />
+                            та створюємо прототип<br />
+                            майбутнього сайту
+                        </p>
+                    </div>
                 </div>
                 <div class="service-item">
-                    <div class="service-header" onclick="toggle(this)"><span class="num">[ 03 ]</span><span class="title">Дизайн</span><span class="icon"><svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"><g class="icon-g"><line x1="1" y1="11.48" x2="8.23035" y2="11.48" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="11.9238" y1="7.86145" x2="11.9238" y2="0.999968" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="11.9238" y1="23" x2="11.9238" y2="16.1385" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="15.7695" y1="11.48" x2="22.9999" y2="11.48" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /></g></svg><svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"><line x1="3.82422" y1="19.4105" x2="8.93685" y2="14.2979" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="8.99008" y1="9.12744" x2="4.13828" y2="4.27564" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="19.6952" y1="19.832" x2="14.8434" y2="14.9802" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="14.2676" y1="8.96665" x2="19.3802" y2="3.85401" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /></svg></span></div>
-                    <div class="service-body"><p>Розробляємо візуальну концепцію сайту та створюємо дизайн сторінок</p></div>
+                    <div class="service-header" onclick="toggle(this)"><span class="num">[ 03 ]</span><span
+                            class="title">Дизайн</span><span class="icon"><svg class="icon-plus"
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none">
+                                <g class="icon-g">
+                                    <line x1="1" y1="11.48" x2="8.23035" y2="11.48" stroke="#F9F9F9" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <line x1="11.9238" y1="7.86145" x2="11.9238" y2="0.999968" stroke="#F9F9F9"
+                                        stroke-width="2" stroke-linecap="round" />
+                                    <line x1="11.9238" y1="23" x2="11.9238" y2="16.1385" stroke="#F9F9F9"
+                                        stroke-width="2" stroke-linecap="round" />
+                                    <line x1="15.7695" y1="11.48" x2="22.9999" y2="11.48" stroke="#F9F9F9"
+                                        stroke-width="2" stroke-linecap="round" />
+                                </g>
+                            </svg><svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none">
+                                <line x1="3.82422" y1="19.4105" x2="8.93685" y2="14.2979" stroke="#F9F9F9"
+                                    stroke-width="2" stroke-linecap="round" />
+                                <line x1="8.99008" y1="9.12744" x2="4.13828" y2="4.27564" stroke="#F9F9F9"
+                                    stroke-width="2" stroke-linecap="round" />
+                                <line x1="19.6952" y1="19.832" x2="14.8434" y2="14.9802" stroke="#F9F9F9"
+                                    stroke-width="2" stroke-linecap="round" />
+                                <line x1="14.2676" y1="8.96665" x2="19.3802" y2="3.85401" stroke="#F9F9F9"
+                                    stroke-width="2" stroke-linecap="round" />
+                            </svg></span></div>
+                    <div class="service-body">
+                        <p class="desktop">
+                            Розробляємо візуальну концепцію сайту,<br />
+                            підбираємо стиль та створюємо дизайн сторінок
+                        </p>
+                        <p class="mobile">
+                            Розробляємо візуальну<br />
+                            концепцію сайту,<br />
+                            підбираємо стиль та<br />
+                            створюємо дизайн<br />
+                            сторінок
+                        </p>
+                    </div>
                 </div>
                 <div class="service-item">
-                    <div class="service-header" onclick="toggle(this)"><span class="num">[ 04 ]</span><span class="title">Розробка</span><span class="icon"><svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"><g class="icon-g"><line x1="1" y1="11.48" x2="8.23035" y2="11.48" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="11.9238" y1="7.86145" x2="11.9238" y2="0.999968" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="11.9238" y1="23" x2="11.9238" y2="16.1385" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="15.7695" y1="11.48" x2="22.9999" y2="11.48" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /></g></svg><svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"><line x1="3.82422" y1="19.4105" x2="8.93685" y2="14.2979" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="8.99008" y1="9.12744" x2="4.13828" y2="4.27564" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="19.6952" y1="19.832" x2="14.8434" y2="14.9802" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="14.2676" y1="8.96665" x2="19.3802" y2="3.85401" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /></svg></span></div>
-                    <div class="service-body"><p>Верстаємо сайт, підключаємо необхідні функції та готуємо його до запуску</p></div>
+                    <div class="service-header" onclick="toggle(this)"><span class="num">[ 04 ]</span><span
+                            class="title">Розробка</span><span class="icon"><svg class="icon-plus"
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none">
+                                <g class="icon-g">
+                                    <line x1="1" y1="11.48" x2="8.23035" y2="11.48" stroke="#F9F9F9" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <line x1="11.9238" y1="7.86145" x2="11.9238" y2="0.999968" stroke="#F9F9F9"
+                                        stroke-width="2" stroke-linecap="round" />
+                                    <line x1="11.9238" y1="23" x2="11.9238" y2="16.1385" stroke="#F9F9F9"
+                                        stroke-width="2" stroke-linecap="round" />
+                                    <line x1="15.7695" y1="11.48" x2="22.9999" y2="11.48" stroke="#F9F9F9"
+                                        stroke-width="2" stroke-linecap="round" />
+                                </g>
+                            </svg><svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none">
+                                <line x1="3.82422" y1="19.4105" x2="8.93685" y2="14.2979" stroke="#F9F9F9"
+                                    stroke-width="2" stroke-linecap="round" />
+                                <line x1="8.99008" y1="9.12744" x2="4.13828" y2="4.27564" stroke="#F9F9F9"
+                                    stroke-width="2" stroke-linecap="round" />
+                                <line x1="19.6952" y1="19.832" x2="14.8434" y2="14.9802" stroke="#F9F9F9"
+                                    stroke-width="2" stroke-linecap="round" />
+                                <line x1="14.2676" y1="8.96665" x2="19.3802" y2="3.85401" stroke="#F9F9F9"
+                                    stroke-width="2" stroke-linecap="round" />
+                            </svg></span></div>
+                    <div class="service-body">
+                        <p class="desktop">
+                            Верстаємо сайт, підключаємо необхідні<br />
+                            функції та готуємо його до запуску
+                        </p>
+                        <p class="mobile">
+                            Верстаємо сайт,<br />
+                            підключаємо необхідні<br />
+                            функції та готуємо його<br />
+                            до запуску
+                        </p>
+                    </div>
                 </div>
             </section>
         </div>
@@ -182,20 +451,45 @@
     <section class="fifth-screen screen">
         <div class="fifth-header">
             <h3>Сайти, створені для компаній<br />з різних сфер бізнесу</h3>
-            <span class="fifth-label">[ Проєкти ]</span>
+            <span class="fifth-label desktop">[ Проєкти ]</span>
         </div>
         <div class="projects-grid">
-            <section><div class="project-item"><img src="./img/Rectangle37.png" alt="Проект 1"><div class="project-caption"><span class="project-num">/ 01</span><span class="project-name">Маркетингова агенція</span></div></div></section>
-            <section><div class="project-item"><img src="./img/Rectangle38.png" alt="Проект 2"><div class="project-caption"><span class="project-num">/ 02</span><span class="project-name">Криптошкола</span></div></div></section>
+            <section>
+                <div class="project-item"><img src="./img/Rectangle37.png" alt="Проект 1">
+                    <div class="project-caption">
+                        <span class="project-num">/ 01</span><span
+                            class="project-name">Маркетингова агенція</span></div>
+                </div>
+            </section>
+            <section>
+                <div class="project-item"><img src="./img/Rectangle38.png" alt="Проект 2">
+                    <div class="project-caption"><span class="project-num">/ 02</span><span
+                            class="project-name">Криптошкола</span></div>
+                </div>
+            </section>
         </div>
-        <div class="line-divider"></div>
+        <div class="line-divider desktop"></div>
         <div class="fifth-bottom">
-            <section><div class="project-item"><img src="./img/Rectangle39.jpg" alt="Проект 3"><div class="project-caption"><span class="project-num">/ 03</span><span class="project-name">Спортивний клуб</span></div></div></section>
-            <section><div class="project-item"><img src="./img/Rectangle40.png" alt="Проект 4"><div class="project-caption"><span class="project-num">/ 04</span><span class="project-name">Житловий комплекс</span></div></div></section>
+            <section>
+                <div class="project-item"><img src="./img/Rectangle39.jpg" alt="Проект 3">
+                    <div class="project-caption"><span class="project-num">/ 03</span><span
+                            class="project-name">Спортивний клуб</span></div>
+                </div>
+            </section>
+            <section>
+                <div class="project-item"><img src="./img/Rectangle40.png" alt="Проект 4">
+                    <div class="project-caption"><span class="project-num">/ 04</span><span
+                            class="project-name">Житловий комплекс</span></div>
+                </div>
+            </section>
             <div class="fifth-footer">
                 <div class="parent btn-group">
                     <a href="works.html" class="arr corner-box"><i></i><span>Переглянути проекти</span></a>
-                    <a href="works.html" class="arrow-but corner-box"><i></i><svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17" fill="none"><path d="M12 1.5L19 8.5M19 8.5L12 15.5M19 8.5H1.5" stroke="#D04200" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+                    <a href="works.html" class="arrow-but corner-box"><i></i><svg class="arrow"
+                            xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17" fill="none">
+                            <path d="M12 1.5L19 8.5M19 8.5L12 15.5M19 8.5H1.5" stroke="#D04200" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></a>
                 </div>
             </div>
         </div>
@@ -203,10 +497,22 @@
 
     <section class="sixth-screen" id="contacts">
         <div class="sixth-top">
-            <span class="ab-text">[ Контакти ]</span>
-            <h2 class="sixth-title">Обговоримо ваш проєкт</h2>
-            <span class="icon-plus-contact">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"><g class="icon-g"><line x1="1" y1="11.48" x2="8.23035" y2="11.48" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="11.9238" y1="7.86145" x2="11.9238" y2="0.999968" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="11.9238" y1="23" x2="11.9238" y2="16.1385" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /><line x1="15.7695" y1="11.48" x2="22.9999" y2="11.48" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" /></g></svg>
+            <span class="ab-text desktop">[ Контакти ]</span>
+            <h2 class="sixth-title desktop">Обговоримо ваш проєкт</h2>
+            <h2 class="sixth-title mobile">Обговоримо<br/> ваш проєкт</h2>
+            <span class="icon-plus-contact desktop">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <g class="icon-g">
+                        <line x1="1" y1="11.48" x2="8.23035" y2="11.48" stroke="#F9F9F9" stroke-width="2"
+                            stroke-linecap="round" />
+                        <line x1="11.9238" y1="7.86145" x2="11.9238" y2="0.999968" stroke="#F9F9F9" stroke-width="2"
+                            stroke-linecap="round" />
+                        <line x1="11.9238" y1="23" x2="11.9238" y2="16.1385" stroke="#F9F9F9" stroke-width="2"
+                            stroke-linecap="round" />
+                        <line x1="15.7695" y1="11.48" x2="22.9999" y2="11.48" stroke="#F9F9F9" stroke-width="2"
+                            stroke-linecap="round" />
+                    </g>
+                </svg>
             </span>
         </div>
         <div class="sixth-contacts">
@@ -220,17 +526,38 @@
         <div class="sixth-image"><img src="./img/Rectangle_41.png" alt="keyboard"></div>
         <div class="line-divider"></div>
         <footer class="sixth-footer">
-            <span class="sixth-copy">© 2026 LAO Studio. All rights reserved.</span>
+            <span class="sixth-copy desktop">© 2026 LAO Studio. All rights reserved.</span>
             <nav class="sixth-nav">
                 <a href="#">Про нас</a>
                 <a href="#">Процеси</a>
                 <a href="#">Проєкти</a>
             </nav>
             <div class="sixth-socials">
-                <a href="#" class="social-btn corner-box"><i></i><svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none"><path d="M37.0327 8.81689L3.52734 22.0427L15.8714 23.8061M37.0327 8.81689L32.6241 35.2685L15.8714 23.8061M37.0327 8.81689L15.8714 23.8061M15.8714 23.8061V33.5051L21.6008 27.7263" stroke="#F9F9F9" stroke-width="2.625" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
-                <a href="#" class="social-btn corner-box"><i></i><svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none"><path d="M4.41016 21.1614C4.41016 13.2647 4.41016 9.31458 6.8631 6.86164C9.31605 4.40869 13.2644 4.40869 21.1628 4.40869C29.0595 4.40869 33.0096 4.40869 35.4626 6.86164C37.9155 9.31458 37.9155 13.2629 37.9155 21.1614C37.9155 29.0581 37.9155 33.0082 35.4626 35.4611C33.0096 37.9141 29.0613 37.9141 21.1628 37.9141C13.2662 37.9141 9.31605 37.9141 6.8631 35.4611C4.41016 33.0082 4.41016 29.0598 4.41016 21.1614Z" stroke="#F9F9F9" stroke-width="2.64516" stroke-linejoin="round" /><path d="M29.0975 21.1611C29.0975 23.2657 28.2615 25.2841 26.7733 26.7723C25.2851 28.2605 23.2667 29.0966 21.162 29.0966C19.0574 29.0966 17.039 28.2605 15.5508 26.7723C14.0626 25.2841 13.2266 23.2657 13.2266 21.1611C13.2266 19.0564 14.0626 17.038 15.5508 15.5498C17.039 14.0616 19.0574 13.2256 21.162 13.2256C23.2667 13.2256 25.2851 14.0616 26.7733 15.5498C28.2615 17.038 29.0975 19.0564 29.0975 21.1611Z" stroke="#F9F9F9" stroke-width="2.64516" /><path d="M30.8751 11.4624H30.8574" stroke="#F9F9F9" stroke-width="3.52688" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
-                <a href="#" class="social-btn corner-box"><i></i><svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none"><path d="M14.4554 19.7802C23.396 19.7802 23.396 31.7416 14.4554 31.7416H3.52734V19.7802M14.4554 19.7802H3.52734M14.4554 19.7802C23.396 19.7802 23.396 8.81689 14.4554 8.81689H3.52734V19.7802M24.6886 23.8061C24.6886 19.424 27.8452 15.8707 31.7424 15.8707C35.6396 15.8707 38.7962 19.424 38.7962 23.8061H24.6886ZM24.6886 23.8061C24.6886 28.1883 27.8452 31.7416 31.7424 31.7416C36.6007 31.7416 37.9144 28.2147 37.9144 28.2147M36.151 10.5803H27.3338" stroke="#F9F9F9" stroke-width="2.64516" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+                <a href="#" class="social-btn corner-box"><i></i><svg xmlns="http://www.w3.org/2000/svg" width="43"
+                        height="43" viewBox="0 0 43 43" fill="none">
+                        <path
+                            d="M37.0327 8.81689L3.52734 22.0427L15.8714 23.8061M37.0327 8.81689L32.6241 35.2685L15.8714 23.8061M37.0327 8.81689L15.8714 23.8061M15.8714 23.8061V33.5051L21.6008 27.7263"
+                            stroke="#F9F9F9" stroke-width="2.625" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></a>
+                <a href="#" class="social-btn corner-box"><i></i><svg xmlns="http://www.w3.org/2000/svg" width="43"
+                        height="43" viewBox="0 0 43 43" fill="none">
+                        <path
+                            d="M4.41016 21.1614C4.41016 13.2647 4.41016 9.31458 6.8631 6.86164C9.31605 4.40869 13.2644 4.40869 21.1628 4.40869C29.0595 4.40869 33.0096 4.40869 35.4626 6.86164C37.9155 9.31458 37.9155 13.2629 37.9155 21.1614C37.9155 29.0581 37.9155 33.0082 35.4626 35.4611C33.0096 37.9141 29.0613 37.9141 21.1628 37.9141C13.2662 37.9141 9.31605 37.9141 6.8631 35.4611C4.41016 33.0082 4.41016 29.0598 4.41016 21.1614Z"
+                            stroke="#F9F9F9" stroke-width="2.64516" stroke-linejoin="round" />
+                        <path
+                            d="M29.0975 21.1611C29.0975 23.2657 28.2615 25.2841 26.7733 26.7723C25.2851 28.2605 23.2667 29.0966 21.162 29.0966C19.0574 29.0966 17.039 28.2605 15.5508 26.7723C14.0626 25.2841 13.2266 23.2657 13.2266 21.1611C13.2266 19.0564 14.0626 17.038 15.5508 15.5498C17.039 14.0616 19.0574 13.2256 21.162 13.2256C23.2667 13.2256 25.2851 14.0616 26.7733 15.5498C28.2615 17.038 29.0975 19.0564 29.0975 21.1611Z"
+                            stroke="#F9F9F9" stroke-width="2.64516" />
+                        <path d="M30.8751 11.4624H30.8574" stroke="#F9F9F9" stroke-width="3.52688"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></a>
+                <a href="#" class="social-btn corner-box"><i></i><svg xmlns="http://www.w3.org/2000/svg" width="43"
+                        height="43" viewBox="0 0 43 43" fill="none">
+                        <path
+                            d="M14.4554 19.7802C23.396 19.7802 23.396 31.7416 14.4554 31.7416H3.52734V19.7802M14.4554 19.7802H3.52734M14.4554 19.7802C23.396 19.7802 23.396 8.81689 14.4554 8.81689H3.52734V19.7802M24.6886 23.8061C24.6886 19.424 27.8452 15.8707 31.7424 15.8707C35.6396 15.8707 38.7962 19.424 38.7962 23.8061H24.6886ZM24.6886 23.8061C24.6886 28.1883 27.8452 31.7416 31.7424 31.7416C36.6007 31.7416 37.9144 28.2147 37.9144 28.2147M36.151 10.5803H27.3338"
+                            stroke="#F9F9F9" stroke-width="2.64516" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></a>
             </div>
+            <span class="sixth-copy mobile">© 2026 LAO Studio. All rights reserved.</span>
         </footer>
     </section>
 
@@ -240,9 +567,9 @@
             <span class="bm-label">[ Меню ]</span>
             <!-- Кнопка закриття — точна копія бургера -->
             <button class="bm-close" id="burgerClose">
-    <span class="bm-corner"></span>
-    <span class="bm-corner2"></span>
-</button>
+                <span class="bm-corner"></span>
+                <span class="bm-corner2"></span>
+            </button>
         </div>
 
         <nav class="bm-nav">
@@ -254,25 +581,18 @@
 
         <div class="bm-socials">
             <a href="#" class="bm-social">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 43 43" fill="none">
-        <path d="M37.0327 8.81689L3.52734 22.0427L15.8714 23.8061M37.0327 8.81689L32.6241 35.2685L15.8714 23.8061M37.0327 8.81689L15.8714 23.8061M15.8714 23.8061V33.5051L21.6008 27.7263" stroke="#F9F9F9" stroke-width="2.625" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-</a>
-<a href="#" class="bm-social">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 43 43" fill="none">
-        <path d="M4.41016 21.1614C4.41016 13.2647 4.41016 9.31458 6.8631 6.86164C9.31605 4.40869 13.2644 4.40869 21.1628 4.40869C29.0595 4.40869 33.0096 4.40869 35.4626 6.86164C37.9155 9.31458 37.9155 13.2629 37.9155 21.1614C37.9155 29.0581 37.9155 33.0082 35.4626 35.4611C33.0096 37.9141 29.0613 37.9141 21.1628 37.9141C13.2662 37.9141 9.31605 37.9141 6.8631 35.4611C4.41016 33.0082 4.41016 29.0598 4.41016 21.1614Z" stroke="#F9F9F9" stroke-width="2.64516" stroke-linejoin="round"/>
-        <path d="M29.0975 21.1611C29.0975 23.2657 28.2615 25.2841 26.7733 26.7723C25.2851 28.2605 23.2667 29.0966 21.162 29.0966C19.0574 29.0966 17.039 28.2605 15.5508 26.7723C14.0626 25.2841 13.2266 23.2657 13.2266 21.1611C13.2266 19.0564 14.0626 17.038 15.5508 15.5498C17.039 14.0616 19.0574 13.2256 21.162 13.2256C23.2667 13.2256 25.2851 14.0616 26.7733 15.5498C28.2615 17.038 29.0975 19.0564 29.0975 21.1611Z" stroke="#F9F9F9" stroke-width="2.64516"/>
-        <path d="M30.8751 11.4624H30.8574" stroke="#F9F9F9" stroke-width="3.52688" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-</a>
-<a href="#" class="bm-social">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 43 43" fill="none">
-        <path d="M14.4554 19.7802C23.396 19.7802 23.396 31.7416 14.4554 31.7416H3.52734V19.7802M14.4554 19.7802H3.52734M14.4554 19.7802C23.396 19.7802 23.396 8.81689 14.4554 8.81689H3.52734V19.7802M24.6886 23.8061C24.6886 19.424 27.8452 15.8707 31.7424 15.8707C35.6396 15.8707 38.7962 19.424 38.7962 23.8061H24.6886ZM24.6886 23.8061C24.6886 28.1883 27.8452 31.7416 31.7424 31.7416C36.6007 31.7416 37.9144 28.2147 37.9144 28.2147M36.151 10.5803H27.3338" stroke="#F9F9F9" stroke-width="2.64516" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-</a>
+                <img src="./img/mobi/Component_11.png" alt="Telegram">
+            </a>
+            <a href="#" class="bm-social">
+                <img src="./img/mobi/Component_12.png" alt="Instagram">
+            </a>
+            <a href="#" class="bm-social">
+                <img src="./img/mobi/Component_13.png" alt="Behance">
+            </a>
         </div>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>

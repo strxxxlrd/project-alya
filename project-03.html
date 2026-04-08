@@ -4,27 +4,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crowd Agency — LAO Studio</title>
+  <title>Padel.Club — LAO Studio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style-proj.css">
   <link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" href="mobile.css">
+  <link rel="stylesheet" href="mobile.css">
 </head>
 
 <body>
-
+  <div class="cursor-btn" id="cursorBtn" data-i18n="cursor-view">Переглянути →</div>
 
   <section class="first-screen screen" style="min-height: auto; background-image: none; margin-bottom: 0;">
     <header>
       <a href="index.html">
-    <img src="./img/lao.jpg" class="LAO" alt="lao">
-</a>
+        <img src="./img/lao.jpg" class="LAO" alt="lao">
+      </a>
       <span>Design studio</span>
-      <button class="language">
+      <button class="language" data-lang="uk">
         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
           <circle cx="5" cy="5" r="5" fill="#D04200" />
         </svg>
-        <span>EN</span>
+        <span data-i18n="lang-en">EN</span>
       </button>
       <button class="burger corner-box" id="burger">
         <i></i>
@@ -35,39 +35,43 @@
 
     <section class="abt-project">
       <div class="proj-image">
-        <div class="proj-img-wrap1" data-href="project-01.html">
+        <div class="proj-img-wrap1" data-href="project-03.html">
           <img src="./img/web/web3.png" alt="">
         </div>
-        <div class="proj-img-wrap2" data-href="project-01.html">
+        <div class="proj-img-wrap2" data-href="project-03.html">
           <img src="./img/web/web31.png" alt="">
         </div>
-        <div class="proj-img-wrap3">
-          <span class="proj-num">/01</span>
+        <div class="proj-img-wrap3 desktop">
+          <span class="proj-num">/03</span>
           <span class="proj-type">UX/UI Design + Development</span>
           <div class="proj-bottom">
-            <div class="proj-logo">©CROWD</div>
+            <div class="proj-logo">PADEL.CLUB13</div>
             <div class="proj-thumb">
               <img src="./img/projects/padel.png" alt="">
             </div>
           </div>
         </div>
       </div>
-
     </section>
 
+    <section class="abt mobile">
+      <div style="font-size: 2.5rem; margin-top: 0.8rem;" class="proj-logo">PADEL.CLUB13</div>
+      <div style="width: 4.25rem;
+height: 3.4375rem;" class="proj-thumb">
+        <img src="./img/projects/padel.png" alt="">
+      </div>
+    </section>
 
-    <!-- PAGE LAYOUT -->
     <div class="page">
       <div class="page-img">
-        <img src="./img/web/website3.png" alt="Crowd Agency">
-
-        
-
+        <img src="./img/web/website3.png" alt="Padel Club">
       </div>
       <div class="page-info">
         <div class="page-title">
-          <p>Маркетингова агенція</p>
-          <span>Лендінг для презентації бренду,<br /> послуг та команди</span>
+          <span class="proj-num mobile">/03</span>
+          <span class="proj-type mobile">UX/UI Design + Development</span>
+          <p data-i18n="project-03-p">Падел-клуб</p>
+          <span data-i18n="project-03-desc">Багатосторінковий сайт для презентації<br />клубу та запису на тренування</span>
         </div>
 
         <div class="page-title">
@@ -75,11 +79,14 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
               <circle cx="4" cy="4" r="4" fill="#F9F9F9" />
             </svg>
-            Задача
+            <span data-i18n="task">Задача</span>
           </p>
-          <span>Створити сайт, який чітко презентує агенцію,<br />
-            пояснює її підхід та формує довіру у<br />
-            потенційних клієнтів</span>
+          <span class="desktop" data-i18n="project-03-task">Передати атмосферу клубу, підкреслити<br />
+            його характер та зробити зручний запис<br />
+            на тренування</span>
+          <span class="mobile" data-i18n="project-03-task">Передати атмосферу клубу, підкреслити<br />
+            його характер та зробити зручний<br /> запис
+            на тренування</span>
         </div>
 
         <div class="page-title">
@@ -87,12 +94,18 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
               <circle cx="4" cy="4" r="4" fill="#F9F9F9" />
             </svg>
-            Рішення
+            <span data-i18n="solution">Рішення</span>
           </p>
-          <span>Обрано чорно-білу стилістику з акцентом на<br />
-            контраст та типографіку. Візуальні елементи<br />
-            з людьми підсилюють ідею бренду та<br />
-            асоціацію з назвою агенції</span>
+          <span class="desktop" data-i18n="project-03-solution">Обрано вінтажну стилістику, що відображає<br />
+            характер клубу та створює відчуття історії<br />
+            й спільноти. Структура сайту включає:<br />
+            про клуб, команду, історію, запис на<br />
+            тренування та розділ з фірмовим мерчем</span>
+          <span class="mobile" data-i18n="project-03-solution">Обрано вінтажну стилістику, що<br /> відображає
+            характер клубу та створює<br /> відчуття історії
+            й спільноти. Структура<br /> сайту включає:
+            про клуб, команду,<br /> історію, запис на
+            тренування та розділ<br /> з фірмовим мерчем</span>
         </div>
 
         <div class="page-title">
@@ -100,88 +113,76 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
               <circle cx="4" cy="4" r="4" fill="#F9F9F9" />
             </svg>
-            Результат
+            <span data-i18n="result">Результат</span>
           </p>
-          <span>Структурований лендінг із блоками:<br />
-            послуги, команда, відгуки та форма заявки,<br />
-            який зручно сприймається та веде<br />
-            користувача до контакту</span>
+          <span data-i18n="project-03-result">Зрозумілий багатосторінковий сайт,<br />
+            який поєднує презентацію бренду клубу<br />
+            та зручну взаємодію з користувачем</span>
         </div>
-
-
-
       </div>
     </div>
 
     <div class="line-divider lini"></div>
-    <footer class="sixth-footer sorry">
+    <footer class="sixth-footer foota sorry" >
+      <div class="back-to-top-container mobile" style="margin-top: -2rem;">
+    <button id="backToTop" class="back-to-top-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="19" viewBox="0 0 14 19" fill="none">
+  <path d="M0.866699 7.66709L6.8667 1.26709M6.8667 1.26709L12.8667 7.66709M6.8667 1.26709L6.8667 17.2671" stroke="#D04200" stroke-width="1.73292" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+        
+    </button>
+</div>
+      <span class="sixth-copy desktop">© 2026 LAO Studio. All rights reserved.</span>
+      <nav class="sixth-nav">
+        <a href="index.html" data-i18n="footer-about">Про нас</a>
+        <a href="index.html#third" data-i18n="footer-processes">Процеси</a>
+        <a href="works.html" data-i18n="footer-projects">Проєкти</a>
+      </nav>
+      <div class="sixth-socials">
+        <a href="#" class="social-btn corner-box"><i></i>
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
+            <path d="M37.0327 8.81689L3.52734 22.0427L15.8714 23.8061M37.0327 8.81689L32.6241 35.2685L15.8714 23.8061M37.0327 8.81689L15.8714 23.8061M15.8714 23.8061V33.5051L21.6008 27.7263" stroke="#F9F9F9" stroke-width="2.625" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+        <a href="#" class="social-btn corner-box"><i></i>
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
+            <path d="M4.41016 21.1614C4.41016 13.2647 4.41016 9.31458 6.8631 6.86164C9.31605 4.40869 13.2644 4.40869 21.1628 4.40869C29.0595 4.40869 33.0096 4.40869 35.4626 6.86164C37.9155 9.31458 37.9155 13.2629 37.9155 21.1614C37.9155 29.0581 37.9155 33.0082 35.4626 35.4611C33.0096 37.9141 29.0613 37.9141 21.1628 37.9141C13.2662 37.9141 9.31605 37.9141 6.8631 35.4611C4.41016 33.0082 4.41016 29.0598 4.41016 21.1614Z" stroke="#F9F9F9" stroke-width="2.64516" stroke-linejoin="round" />
+            <path d="M29.0975 21.1611C29.0975 23.2657 28.2615 25.2841 26.7733 26.7723C25.2851 28.2605 23.2667 29.0966 21.162 29.0966C19.0574 29.0966 17.039 28.2605 15.5508 26.7723C14.0626 25.2841 13.2266 23.2657 13.2266 21.1611C13.2266 19.0564 14.0626 17.038 15.5508 15.5498C17.039 14.0616 19.0574 13.2256 21.162 13.2256C23.2667 13.2256 25.2851 14.0616 26.7733 15.5498C28.2615 17.038 29.0975 19.0564 29.0975 21.1611Z" stroke="#F9F9F9" stroke-width="2.64516" />
+            <path d="M30.8751 11.4624H30.8574" stroke="#F9F9F9" stroke-width="3.52688" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+        <a href="#" class="social-btn corner-box"><i></i>
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
+            <path d="M14.4554 19.7802C23.396 19.7802 23.396 31.7416 14.4554 31.7416H3.52734V19.7802M14.4554 19.7802H3.52734M14.4554 19.7802C23.396 19.7802 23.396 8.81689 14.4554 8.81689H3.52734V19.7802M24.6886 23.8061C24.6886 19.424 27.8452 15.8707 31.7424 15.8707C35.6396 15.8707 38.7962 19.424 38.7962 23.8061H24.6886ZM24.6886 23.8061C24.6886 28.1883 27.8452 31.7416 31.7424 31.7416C36.6007 31.7416 37.9144 28.2147 37.9144 28.2147M36.151 10.5803H27.3338" stroke="#F9F9F9" stroke-width="2.64516" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+      <span class="sixth-copy mobile">© 2026 LAO Studio. All rights reserved.</span>
+    </footer>
 
-            <span class="sixth-copy">© 2026 LAO Studio. All rights reserved.</span>
-            <nav class="sixth-nav">
-                <a href="#">Про нас</a>
-                <a href="#">Процеси</a>
-                <a href="#">Проєкти</a>
-            </nav>
-            <div class="sixth-socials">
-                <a href="#" class="social-btn corner-box">
-                    <i></i>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
-                        <path
-                            d="M37.0327 8.81689L3.52734 22.0427L15.8714 23.8061M37.0327 8.81689L32.6241 35.2685L15.8714 23.8061M37.0327 8.81689L15.8714 23.8061M15.8714 23.8061V33.5051L21.6008 27.7263"
-                            stroke="#F9F9F9" stroke-width="2.625" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </a>
-                <a href="#" class="social-btn corner-box">
-                    <i></i>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
-                        <path
-                            d="M4.41016 21.1614C4.41016 13.2647 4.41016 9.31458 6.8631 6.86164C9.31605 4.40869 13.2644 4.40869 21.1628 4.40869C29.0595 4.40869 33.0096 4.40869 35.4626 6.86164C37.9155 9.31458 37.9155 13.2629 37.9155 21.1614C37.9155 29.0581 37.9155 33.0082 35.4626 35.4611C33.0096 37.9141 29.0613 37.9141 21.1628 37.9141C13.2662 37.9141 9.31605 37.9141 6.8631 35.4611C4.41016 33.0082 4.41016 29.0598 4.41016 21.1614Z"
-                            stroke="#F9F9F9" stroke-width="2.64516" stroke-linejoin="round" />
-                        <path
-                            d="M29.0975 21.1611C29.0975 23.2657 28.2615 25.2841 26.7733 26.7723C25.2851 28.2605 23.2667 29.0966 21.162 29.0966C19.0574 29.0966 17.039 28.2605 15.5508 26.7723C14.0626 25.2841 13.2266 23.2657 13.2266 21.1611C13.2266 19.0564 14.0626 17.038 15.5508 15.5498C17.039 14.0616 19.0574 13.2256 21.162 13.2256C23.2667 13.2256 25.2851 14.0616 26.7733 15.5498C28.2615 17.038 29.0975 19.0564 29.0975 21.1611Z"
-                            stroke="#F9F9F9" stroke-width="2.64516" />
-                        <path d="M30.8751 11.4624H30.8574" stroke="#F9F9F9" stroke-width="3.52688"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </a>
-                <a href="#" class="social-btn corner-box">
-                    <i></i>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
-                        <path
-                            d="M14.4554 19.7802C23.396 19.7802 23.396 31.7416 14.4554 31.7416H3.52734V19.7802M14.4554 19.7802H3.52734M14.4554 19.7802C23.396 19.7802 23.396 8.81689 14.4554 8.81689H3.52734V19.7802M24.6886 23.8061C24.6886 19.424 27.8452 15.8707 31.7424 15.8707C35.6396 15.8707 38.7962 19.424 38.7962 23.8061H24.6886ZM24.6886 23.8061C24.6886 28.1883 27.8452 31.7416 31.7424 31.7416C36.6007 31.7416 37.9144 28.2147 37.9144 28.2147M36.151 10.5803H27.3338"
-                            stroke="#F9F9F9" stroke-width="2.64516" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </a>
-            </div>
-        </footer>
-        <!-- БУРГЕР МЕНЮ -->
     <div class="burger-menu" id="burgerMenu">
-        <div class="bm-top">
-            <span class="bm-label">[ Меню ]</span>
-            <button class="bm-close" id="burgerClose">
-                <span class="bm-corner"></span>
-                <span class="bm-corner2"></span>
-            </button>
-        </div>
-        <nav class="bm-nav">
-            <a href="index.html" class="bm-link"><span class="bm-num">[01]</span>Про нас</a>
-            <a href="index.html#third" class="bm-link"><span class="bm-num">[02]</span>Процеси</a>
-            <a href="works.html" class="bm-link"><span class="bm-num">[03]</span>Проєкти</a>
-            <a href="index.html#contacts" class="bm-link"><span class="bm-num">[04]</span>Контакти</a>
-        </nav>
-        <div class="bm-socials">
-            <a href="#" class="bm-social">
-                <img src="./img/mobi/Component_11.png" alt="Telegram">
-            </a>
-            <a href="#" class="bm-social">
-                <img src="./img/mobi/Component_12.png" alt="Instagram">
-            </a>
-            <a href="#" class="bm-social">
-                <img src="./img/mobi/Component_13.png" alt="Behance">
-            </a>
-        </div>
+      <div class="bm-top">
+        <span class="bm-label" data-i18n="menu">[ Меню ]</span>
+        <button class="bm-close" id="burgerClose">
+          <span class="bm-corner"></span>
+          <span class="bm-corner2"></span>
+        </button>
+      </div>
+      <nav class="bm-nav">
+        <a href="index.html" class="bm-link"><span class="bm-num">[01]</span><span data-i18n="footer-about">Про нас</span></a>
+        <a href="index.html#third" class="bm-link"><span class="bm-num">[02]</span><span data-i18n="footer-processes">Процеси</span></a>
+        <a href="works.html" class="bm-link"><span class="bm-num">[03]</span><span data-i18n="footer-projects">Проєкти</span></a>
+        <a href="index.html#contacts" class="bm-link"><span class="bm-num">[04]</span><span data-i18n="footer-contacts">Контакти</span></a>
+      </nav>
+      <div class="bm-socials">
+        <a href="#" class="bm-social"><img src="./img/mobi/Component_11.png" alt="Telegram"></a>
+        <a href="#" class="bm-social"><img src="./img/mobi/Component_12.png" alt="Instagram"></a>
+        <a href="#" class="bm-social"><img src="./img/mobi/Component_13.png" alt="Behance"></a>
+      </div>
+      
     </div>
+
+
     <script src="script.js"></script>
 </body>
-
 </html>

@@ -80,9 +80,13 @@ align-self: stretch;
 
 .page-title p,
 .page-title span {
-  margin: 0.2rem 0;
+  
   line-height: 1;
 }
+
+.desktop { display: block; }
+.mobile { display: none; }
+
 
 
 .page-info {
@@ -195,11 +199,11 @@ align-self: stretch;
 .proj-logo {
  color: var(--White, #F9F9F9);
 /* Desktop/H1 */
-font-size: 4.75rem;
+font-size: 4rem;
 font-style: normal;
 font-weight: 500;
 line-height: 120%;
-letter-spacing: -0.0875rem;
+letter-spacing: -0.06625rem;
 margin-top: 0;
 margin-bottom: -13px;
 }

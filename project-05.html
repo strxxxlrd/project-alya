@@ -18,11 +18,11 @@
     <header>
       <img src="./img/lao.jpg" class="LAO" alt="lao">
       <span>Design studio</span>
-      <button class="language">
+<button class="language" data-lang="uk">
         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
           <circle cx="5" cy="5" r="5" fill="#D04200" />
         </svg>
-        <span>EN</span>
+        <span data-i18n="lang-en">EN</span>
       </button>
       <button class="burger corner-box" id="burger">
         <i></i>
@@ -64,8 +64,8 @@
       </div>
       <div class="page-info">
         <div class="page-title">
-          <p>Маркетингова агенція</p>
-          <span>Лендінг для презентації бренду,<br /> послуг та команди</span>
+<p data-i18n="project-01">Маркетингова агенція</p>
+          <span data-i18n="project-01-desc">Лендінг для презентації бренду,<br /> послуг та команди</span>
         </div>
 
         <div class="page-title">
@@ -73,9 +73,9 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
               <circle cx="4" cy="4" r="4" fill="#F9F9F9" />
             </svg>
-            Задача
+            <span data-i18n="task">Задача</span>
           </p>
-          <span>Створити сайт, який чітко презентує агенцію,<br />
+          <span data-i18n="project-01-task">Створити сайт, який чітко презентує агенцію,<br />
             пояснює її підхід та формує довіру у<br />
             потенційних клієнтів</span>
         </div>
@@ -85,9 +85,9 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
               <circle cx="4" cy="4" r="4" fill="#F9F9F9" />
             </svg>
-            Рішення
+            <span data-i18n="solution">Рішення</span>
           </p>
-          <span>Обрано чорно-білу стилістику з акцентом на<br />
+          <span data-i18n="project-01-solution">Обрано чорно-білу стилістику з акцентом на<br />
             контраст та типографіку. Візуальні елементи<br />
             з людьми підсилюють ідею бренду та<br />
             асоціацію з назвою агенції</span>
@@ -98,9 +98,9 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
               <circle cx="4" cy="4" r="4" fill="#F9F9F9" />
             </svg>
-            Результат
+            <span data-i18n="result">Результат</span>
           </p>
-          <span>Структурований лендінг із блоками:<br />
+          <span data-i18n="project-01-result">Структурований лендінг із блоками:<br />
             послуги, команда, відгуки та форма заявки,<br />
             який зручно сприймається та веде<br />
             користувача до контакту</span>
@@ -115,10 +115,10 @@
     <footer class="sixth-footer sorry">
 
             <span class="sixth-copy">© 2026 LAO Studio. All rights reserved.</span>
-            <nav class="sixth-nav">
-                <a href="#">Про нас</a>
-                <a href="#">Процеси</a>
-                <a href="#">Проєкти</a>
+<nav class="sixth-nav">
+                <a href="index.html" data-i18n="footer-about">Про нас</a>
+                <a href="index.html#third" data-i18n="footer-processes">Процеси</a>
+                <a href="works.html" data-i18n="footer-projects">Проєкти</a>
             </nav>
             <div class="sixth-socials">
                 <a href="#" class="social-btn corner-box">
@@ -151,17 +151,17 @@
         <!-- БУРГЕР МЕНЮ -->
     <div class="burger-menu" id="burgerMenu">
         <div class="bm-top">
-            <span class="bm-label">[ Меню ]</span>
+            <span class="bm-label" data-i18n="menu">[ Меню ]</span>
             <button class="bm-close" id="burgerClose">
                 <span class="bm-corner"></span>
                 <span class="bm-corner2"></span>
             </button>
         </div>
-        <nav class="bm-nav">
-            <a href="index.html" class="bm-link"><span class="bm-num">[01]</span>Про нас</a>
-            <a href="index.html#third" class="bm-link"><span class="bm-num">[02]</span>Процеси</a>
-            <a href="works.html" class="bm-link"><span class="bm-num">[03]</span>Проєкти</a>
-            <a href="index.html#contacts" class="bm-link"><span class="bm-num">[04]</span>Контакти</a>
+<nav class="bm-nav">
+            <a href="index.html" class="bm-link"><span class="bm-num">[01]</span><span data-i18n="footer-about">Про нас</span></a>
+            <a href="index.html#third" class="bm-link"><span class="bm-num">[02]</span><span data-i18n="footer-processes">Процеси</span></a>
+            <a href="works.html" class="bm-link"><span class="bm-num">[03]</span><span data-i18n="footer-projects">Проєкти</span></a>
+            <a href="index.html#contacts" class="bm-link"><span class="bm-num">[04]</span><span data-i18n="footer-contacts">Контакти</span></a>
         </nav>
         <div class="bm-socials">
             <a href="#" class="bm-social">

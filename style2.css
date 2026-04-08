@@ -25,7 +25,7 @@
 
 .work-meta {
   position: relative;
-  border-top: 1px solid #F9F9F9;
+  border-top: 1px solid #4d4d4d;
   padding-top: 24px; /* це і є відступ між лінією і текстом */
   margin-bottom: 0;
 }
@@ -37,7 +37,7 @@
   left: 0;
   width: 1px;
   height: 14px;
-  background: #F9F9F9;
+  background: #4d4d4d;
 }
 
 .work-tag,
@@ -183,3 +183,7 @@
     transform: translate(-50%, -50%) scale(0.88);
     transition: transform 0.15s ease;
 }
+
+
+
+

@@ -1049,7 +1049,7 @@ button.language {
 
 .sixth-screen .line-divider {
     margin: 0;
-    margin-top: -2rem;
+    
     position: relative;
     z-index: 1;
     margin-left: calc(-1 * clamp(1rem, 2.08vw, 2.5rem));

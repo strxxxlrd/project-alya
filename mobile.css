@@ -575,6 +575,7 @@ border: 1px solid rgba(249, 249, 249, 0.40);
     }
 
     .fifth-bottom {
+        margin-top: 2.5rem;
         gap: 2.5rem;
         flex-direction: column;
     }
@@ -838,6 +839,47 @@ border: 1px solid rgba(249, 249, 249, 0.40);
 
 
 
+    /* ================================================ */
+/* ИСПРАВЛЕНИЕ ГОРИЗОНТАЛЬНОГО СКРОЛЛА НА IPHONE 16 PRO */
+/* ================================================ */
+
+html,
+body {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+}
+
+/* 1. Cookie-баннер */
+#cookie-banner {
+    width: min(32rem, calc(100vw - 40px)) !important;
+    max-width: 32rem;
+    left: 20px;
+    right: 20px;
+    margin: 0 auto;
+}
+
+/* 2. sixth-image — правильный full-bleed */
+.sixth-image {
+    width: 100vw !important;
+    margin-left: calc(50% - 50vw) !important;
+    margin-right: calc(50% - 50vw) !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Дополнительная страховка */
+.first-screen,
+.fourth-screen .video-screen,
+.sixth-screen,
+.sixth-image img {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+
+
     .abt {
         
         margin-top: -3rem;
@@ -922,16 +964,8 @@ letter-spacing: -0.025rem;
 
 
 
-.foota{
-    margin-top: 2rem;
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
-}
 
-    /* FOOTER PROJECT */
-    .sorry {
-        padding: 0;
-    }
+
 
     .lini {
         margin-top: 3rem;
@@ -941,7 +975,61 @@ letter-spacing: -0.025rem;
 @media (max-width: 480px) {
 
 
+/* ================================================ */
+/* ФИНАЛЬНОЕ ИСПРАВЛЕНИЕ КНОПКИ ↑ НА СТРАНИЦЕ ПРОЕКТОВ */
+/* ================================================ */
 
+html,
+body {
+    overflow-x: hidden !important;
+}
+
+/* 1. Все футеры на мобильных — одинаковые отступы */
+.sixth-footer {
+    width: 100% !important;
+    max-width: 100% !important;
+    
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    box-sizing: border-box;
+    position: relative;               /* важно для absolute-кнопки */
+}
+
+/* 2. Кнопка ↑ — теперь всегда с таким же отступом как навигация */
+.back-to-top-container.mobile {
+    position: absolute;
+    right: 1.25rem !important;        /* ← вот главное изменение */
+    top: 25%;
+    transform: translateY(-50%);
+    padding: 0;
+    background: none;
+    z-index: 10;
+}
+
+/* 3. Социальные кнопки — одинаковый отступ с навигацией */
+.sixth-socials {
+    width: 100% !important;
+    padding: 0 !important;
+    gap: 0.875rem;
+    margin-top: 1.5rem;
+    box-sizing: border-box;
+}
+
+.sixth-socials .social-btn {
+    width: auto !important;
+    flex: 1;
+    min-width: 0;
+}
+
+/* 4. Галерея проектов (чтобы не ломалась) */
+.proj-image,
+.work-images {
+    width: 100% !important;
+    max-width: 100% !important;
+    
+    box-sizing: border-box;
+    overflow: hidden;
+}
 
     #cookie-banner {
         display: block !important;

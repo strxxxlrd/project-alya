@@ -109,7 +109,25 @@ a.arr, a.arrow-but {
     transition: width 0.1s linear;
 }
 
+:root {
+    --grid-offset: 19.2vw;
+    --text3-current: 0.83vw;
+    --sixth-title-current: -2.2vw;
+    --brbr-current: 19vw;
+}
 
+.text3 {
+    margin-left: calc(var(--grid-offset) - var(--text3-current));
+}
+
+.sixth-title {
+    margin-left: calc(var(--grid-offset) - var(--sixth-title-current));
+    text-align: left;
+}
+
+.brbr {
+    margin-left: calc(var(--grid-offset) - var(--brbr-current));
+}
 
 /* cookie-banner.css */
 
@@ -418,6 +436,7 @@ span {
     background-repeat: no-repeat;
 }
 
+
 .first2 {
     position: absolute;
     top: 0;
@@ -428,20 +447,84 @@ span {
     z-index: 0;
 }
 
-header {
+/* ================================================ */
+/* FIRST SCREEN — ХЕДЕР (обновлённый грид) */
+/* ================================================ */
+.header {
+    padding: clamp(1rem, 2.08vw, 2.5rem);
+    width: 100%;
+    box-sizing: border-box;
     position: relative;
     z-index: 1;
-    padding: clamp(1rem, 2.08vw, 2.5rem);
-    gap: clamp(2rem, 10.9vw, 13.125rem);
-    display: flex;
+}
+
+.header-text-grid {
+    width: 100%;
+}
+
+.header-buttons {
+    display: grid;
+    grid-template-columns: auto 19.2vw auto auto auto;
+    grid-template-rows: auto auto;
+    align-items: start;
+    width: 100%;
     
-    align-items: center;
 }
 
-header .pup{
-    margin-left: 12rem;
+/* Лого — строка 1, колонка 1 */
+.header-buttons .logo {
+    grid-column: 1;
+    grid-row: 1;
 }
 
+/* Design studio — строка 1, колонка 2 */
+.header-buttons .pup {
+    
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+}
+
+/* brbr — строка 2, колонка 2 — ровно под Design studio */
+.header-buttons .brbr {
+    width: max-content;
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 19rem;
+}
+
+/* Язык — строка 1, колонка 4 */
+.header-buttons .language {
+    grid-column: 4;
+    grid-row: 1;
+    align-self: center;
+}
+
+/* Бургер — строка 1, колонка 5 */
+.header-buttons .burger {
+    grid-column: 5;
+    grid-row: 1;
+    align-self: center;
+}
+
+.brbr p {
+    
+    font-size: 1.5rem;
+    line-height: 130%;
+    margin: 0;
+}
+
+.brbr svg {
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+}
+/* Кнопки справа (язык + бургер) */
+
+
+/* Если у тебя ещё остались старые стили button.language и .burger — они работают */
 
 
 .LAO {
@@ -452,11 +535,12 @@ header .pup{
 }
 
 button.language {
-    margin-left: 11%;
+    
     display: flex;
+    margin-right: 0;
     align-items: center;
     gap: 0.65rem;
-    margin-right: 8rem;
+   
     border: none;
     outline: none;
     background: none;
@@ -466,6 +550,7 @@ button.language {
 .burger {
     margin-left: auto;
     position: relative;
+    
     width: 52px;
     height: 52px;
     background: rgba(255, 255, 255, 0.15);
@@ -510,7 +595,7 @@ button.language {
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
-    min-height: calc(100vh - 6rem);
+    min-height: calc(50vh );
     padding: clamp(1rem, 2.08vw, 2.5rem);
     padding-bottom: clamp(3rem, 5vw, 6rem);
     width: 100%;
@@ -523,27 +608,9 @@ button.language {
     align-items: flex-start;
 }
 
-.brbr {
-    display: flex;
-    flex-direction: row !important;
-    align-items: flex-start;
-    gap: 0.75rem;
-    margin-left: clamp(1rem, 34vw, 31rem);
-    margin-bottom: 6rem;
-}
 
-.brbr p {
-    font-size: 1.5rem;
-font-style: normal;
-font-weight: 400;
-line-height: 130%;
-    margin: 0;
-}
 
-.brbr svg {
-    flex-shrink: 0;
-    margin-top: 0.2rem;
-}
+
 
 .description {
     margin-left: 0;
@@ -730,20 +797,16 @@ line-height: 130%;
 .about3 {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    
     width: 97%;
 }
 
-.text3 {
-    width: 77%;
-    margin-bottom: 5rem;
-}
 
 
 .services3 {
     display: flex;
     flex-direction: column;
-    width: 77%;
+    margin-left: var(--grid-offset);
 }
 
 .services3 .service-header {
@@ -971,10 +1034,11 @@ margin: clamp(2.5rem, 6vw, 3rem) 0 clamp(1.5rem, 4vw, 3rem) 0;
 }
 
 .sixth-title {
-    margin: 0;
-    margin-left: -13rem;
-    text-align: center;
-    flex: 1;
+    margin-top: 0;
+    
+    text-align: left;
+    flex: unset;
+
 }
 
 .icon-plus-contact {
@@ -984,13 +1048,13 @@ margin: clamp(2.5rem, 6vw, 3rem) 0 clamp(1.5rem, 4vw, 3rem) 0;
 .sixth-contacts {
     display: flex;
     align-items: center;
-    justify-content: center;
+    
     margin-bottom: 2rem;
     z-index: 1;
 }
 
 .sixth-label {
-    margin-left: -5rem;
+    margin-left: calc(var(--grid-offset) - var(--sixth-title-current));
     opacity: 0.4;
     
     white-space: nowrap;

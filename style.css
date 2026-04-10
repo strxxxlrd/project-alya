@@ -111,13 +111,15 @@ a.arr, a.arrow-but {
 
 :root {
     --grid-offset: 19.2vw;
-    --text3-current: 0.83vw;
-    --sixth-title-current: -2.2vw;
+    --text3-current: 2.5vw;
+    --sixth-title-current: -2.5vw;
     --brbr-current: 19vw;
+    --right-col: 25.5vw;   /* ← добавить */
+    --about-offset: 7.5vw
 }
 
-.text3 {
-    margin-left: calc(var(--grid-offset) - var(--text3-current));
+.about3 {
+    margin-left: calc(var(--grid-offset) + var(--text3-current));
 }
 
 .sixth-title {
@@ -261,7 +263,7 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(1.75rem, 3.44vw, 4.125rem);
+    font-size: 4.125rem;
     line-height: 1.2;
     letter-spacing: -0.01em;
     font-weight: 400;
@@ -498,9 +500,10 @@ span {
 
 /* Язык — строка 1, колонка 4 */
 .header-buttons .language {
-    grid-column: 4;
+    grid-column: 2;
     grid-row: 1;
     align-self: center;
+    justify-self: start;
 }
 
 /* Бургер — строка 1, колонка 5 */
@@ -535,12 +538,11 @@ span {
 }
 
 button.language {
-    
     display: flex;
     margin-right: 0;
+    margin-left: var(--right-col); /* выравнивание по оси Design studio right */
     align-items: center;
     gap: 0.65rem;
-   
     border: none;
     outline: none;
     background: none;
@@ -708,7 +710,7 @@ button.language {
 
 .second-screen {
     display: flex;
-    justify-content: space-between;
+    
     align-items: flex-start;
     padding: clamp(1rem, 2.08vw, 5rem);
 }
@@ -720,7 +722,7 @@ button.language {
     flex-direction: row;
     align-items: flex-start;
     
-    width: 70%;
+    
 }
 
 .ab-text {
@@ -742,11 +744,21 @@ button.language {
 }
 
 .about {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: clamp(1.5rem, 3vw, 2.5rem);
-    width: 60%;
+    width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: clamp(1.5rem, 3vw, 2.5rem);
+  
+  /* Главная формула — зависит от language */
+  margin-left: calc(var(--right-col) - var(--about-offset));
+  
+  /* Защита от поломок + плавность */
+  margin-left: clamp(
+    8vw,
+    calc(var(--right-col) - var(--about-offset)),
+    22vw
+  );
 }
 
 .text {
@@ -767,7 +779,7 @@ button.language {
 .services {
     display: flex;
     flex-direction: column;
-    width: 48.875rem;
+    width: 100%;
     margin-top: 4rem;
 }
 
@@ -778,7 +790,7 @@ button.language {
 
 .third-screen {
     display: flex;
-    justify-content: space-between;
+    
     align-items: flex-start;
     padding: clamp(1rem, 2.08vw, 5rem);
 }
@@ -797,8 +809,6 @@ button.language {
 .about3 {
     display: flex;
     flex-direction: column;
-    
-    width: 97%;
 }
 
 
@@ -806,7 +816,7 @@ button.language {
 .services3 {
     display: flex;
     flex-direction: column;
-    margin-left: var(--grid-offset);
+    
 }
 
 .services3 .service-header {
@@ -1061,7 +1071,7 @@ margin: clamp(2.5rem, 6vw, 3rem) 0 clamp(1.5rem, 4vw, 3rem) 0;
 }
 
 .sixth-links {
-    margin-left: 9rem;
+    margin-left: calc(var(--right-col) - var(--grid-offset) - var(--sixth-title-current)*2);
     display: flex;
     gap: 3.5rem;
 }
@@ -1122,12 +1132,12 @@ margin: clamp(2.5rem, 6vw, 3rem) 0 clamp(1.5rem, 4vw, 3rem) 0;
 
 .sixth-copy {
     opacity: 0.3;
-    font-size: clamp(0.7rem, 0.9vw, 0.875rem);
+    
     white-space: nowrap;
 }
 
 .sixth-nav {
-    margin-left: 7rem;
+    margin-left: calc(var(--sixth-title-current)*3);
     display: flex;
     flex-direction: column;
     gap: 0.25rem;

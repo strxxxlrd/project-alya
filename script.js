@@ -31,53 +31,53 @@ const translations = {
         'about-us': '[ Про нас ]',
         'about-us-mobile': '[ Про нас ]',
         'about-title': 'Ми допомагаємо компаніям<br />виглядати професійно в онлайнi',
-        'about-title-mobile': 'Ми допомагаємо компаніям<br />виглядати професійно в онлайнi',
+        'about-title-mobile': 'Ми допомагаємо<br /> компаніямвиглядати<br/> професійно в онлайнi',
         'about-desc': 'Поєднуємо стратегію, дизайн та розробку,<br />щоб створювати сайти, які працюють на бізнес',
-        'about-desc-mobile': 'Поєднуємо стратегію, дизайн та розробку,<br />щоб створювати сайти, які працюють на бізнес',
+        'about-desc-mobile': 'Поєднуємо стратегію, дизайн та<br /> розробку,щоб створювати сайти,<br/> які працюють на бізнес',
 
         // Services
         'service-01-title': 'Односторінковий сайт',
         'service-01-title-mobile': 'Односторінковий сайт',
         'service-01-desc': 'Підходить для запуску нового продукту, рекламної кампанії або<br/> презентації конкретної послуги. Такий сайт допомагає швидко<br/> пояснити пропозицію, показати переваги та привести клієнта до заявки',
-        'service-01-desc-mobile': 'Підходить для запуску нового продукту, рекламної кампанії або<br/> презентації конкретної послуги. Такий сайт допомагає швидко<br/> пояснити пропозицію, показати переваги та привести клієнта до заявки',
+        'service-01-desc-mobile': 'Підходить для запуску нового<br/> продукту, рекламної кампанії<br/> або презентації конкретної<br/> послуги. Такий сайт допомагає<br/> швидко пояснити пропозицію,<br/> показати переваги та привести<br/> клієнта до заявки',
 
         'service-02-title': 'Корпоративний сайт',
         'service-02-title-mobile': 'Корпоративний сайт',
         'service-02-desc': 'Підходить для компаній, яким важливо повноцінно представити<br/>бізнес в інтернеті. На такому сайті можна розповісти про компанію,<br/> послуги, проєкти та створити професійний онлайн-імідж',
-        'service-02-desc-mobile': 'Підходить для компаній, яким важливо повноцінно представити<br/>бізнес в інтернеті. На такому сайті можна розповісти про компанію,<br/> послуги, проєкти та створити професійний онлайн-імідж',
+        'service-02-desc-mobile': 'Підходить для компаній, яким<br/> важливо повноцінно представити<br/>бізнес в інтернеті. На такому сайті<br/> можна розповісти про компанію,<br/> послуги, проєкти та створити<br/> професійний онлайн-імідж',
 
         'service-03-title': 'Редизайн сайту',
         'service-03-title-mobile': 'Редизайн сайту',
         'service-03-desc': 'Підходить, якщо сайт вже існує, але виглядає застаріло або незручний<br/> у використанні. Ми оновлюємо структуру, дизайн та робимо сайт<br/> більш зрозумілим для користувачів',
-        'service-03-desc-mobile': 'Підходить, якщо сайт вже існує, але виглядає застаріло або незручний<br/> у використанні. Ми оновлюємо структуру, дизайн та робимо сайт<br/> більш зрозумілим для користувачів',
+        'service-03-desc-mobile': 'Підходить, якщо сайт вже існує,<br/> але виглядає застаріло або<br/> незручний у використанні.<br/> Ми оновлюємо структуру, дизайн<br/> та робимо сайт більш зрозумілим<br/> для користувачів',
 
         // Process
         'process': '[ Процеси ]',
         'process-mobile': '[ Процеси ]',
-        'process-title': 'Прозорий процес без хаосу. Ви знаєте, що відбувається на кожному етапі. Завжди є конкретний дедлайн',
-        'process-title-mobile': 'Прозорий процес без хаосу. Ви знаєте, що відбувається на кожному етапі. Завжди є конкретний дедлайн',
+        'process-title': 'Прозорий процес без хаосу. Ви знаєте, що<br/> відбувається на кожному етапі. Завжди є<br/> конкретний дедлайн',
+        'process-title-mobile': 'Прозорий процес без<br/> хаосу. Ви знаєте, що<br/> відбувається на<br/> кожному етапі.',
         'process-title-p': '[ Завжди є конкретний дедлайн ]',
         'process-title-p-mobile': '[ Завжди є конкретний дедлайн ]',
 
         'strategy': 'Стратегія',
         'strategy-mobile': 'Стратегія',
         'strategy-desc': 'Аналізуємо бізнес, цільову аудиторію та конкурентів.<br /> Формуємо основу майбутнього сайту',
-        'strategy-desc-mobile': 'Аналізуємо бізнес, цільову аудиторію та конкурентів.<br /> Формуємо основу майбутнього сайту',
+        'strategy-desc-mobile': 'Аналізуємо бізнес, цільову<br/> аудиторію та конкурентів.<br /> Формуємо основу<br/> майбутнього сайту',
 
         'structure': 'Структура',
         'structure-mobile': 'Структура',
         'structure-desc': 'Формуємо логіку сторінок, сценарій користувача<br /> та створюємо прототип майбутнього сайту',
-        'structure-desc-mobile': 'Формуємо логіку сторінок, сценарій користувача<br /> та створюємо прототип майбутнього сайту',
+        'structure-desc-mobile': 'Формуємо логіку сторінок,<br/> сценарій користувача<br /> та створюємо прототип<br/> майбутнього сайту',
 
         'design': 'Дизайн',
         'design-mobile': 'Дизайн',
         'design-desc': 'Розробляємо візуальну концепцію сайту,<br /> підбираємо стиль та створюємо дизайн сторінок',
-        'design-desc-mobile': 'Розробляємо візуальну концепцію сайту,<br /> підбираємо стиль та створюємо дизайн сторінок',
+        'design-desc-mobile': 'Розробляємо візуальну<br/> концепцію сайту,<br /> підбираємо стиль та<br/> створюємо дизайн<br/> сторінок',
 
         'development': 'Розробка',
         'development-mobile': 'Розробка',
         'development-desc': 'Верстаємо сайт, підключаємо необхідні<br /> функції та готуємо його до запуску',
-        'development-desc-mobile': 'Верстаємо сайт, підключаємо необхідні<br /> функції та готуємо його до запуску',
+        'development-desc-mobile': 'Верстаємо сайт,<br/> підключаємо необхідні<br /> функції та готуємо його<br/> до запуску',
 
         // Projects
         'projects-title': 'Сайти, створені для компаній<br />з різних сфер бізнесу',
@@ -147,38 +147,38 @@ const translations = {
         'project-01-desc': 'Лендінг для презентації бренду,<br /> послуг та команди',
         'project-01-desc-mobile': 'Лендінг для презентації бренду,<br /> послуг та команди',
         'project-01-task': 'Створити сайт, який чітко презентує агенцію,<br />пояснює її підхід та формує довіру у<br />потенційних клієнтів',
-        'project-01-task-mobile': 'Створити сайт, який чітко презентує агенцію,<br />пояснює її підхід та формує довіру у<br />потенційних клієнтів',
+        'project-01-task-mobile': 'Створити сайт, який чітко презентує<br/> агенцію,пояснює її підхід та формує<br/> довіру у потенційних клієнтів',
         'project-01-solution': 'Обрано чорно-білу стилістику з акцентом на<br /> контраст та типографіку. Візуальні елементи<br /> з людьми підсилюють ідею бренду та<br /> асоціацію з назвою агенції',
-        'project-01-solution-mobile': 'Обрано чорно-білу стилістику з акцентом на<br /> контраст та типографіку. Візуальні елементи<br /> з людьми підсилюють ідею бренду та<br /> асоціацію з назвою агенції',
+        'project-01-solution-mobile': 'Обрано чорно-білу стилістику з<br/> акцентом на контраст та типографіку.<br /> Візуальні елементи з людьми<br /> підсилюють ідею бренду таасоціацію<br />  з назвою агенції',
         'project-01-result': 'Структурований лендінг із блоками:<br /> послуги, команда, відгуки та форма заявки,<br /> який зручно сприймається та веде<br /> користувача до контакту',
-        'project-01-result-mobile': 'Структурований лендінг із блоками:<br /> послуги, команда, відгуки та форма заявки,<br /> який зручно сприймається та веде<br /> користувача до контакту',
+        'project-01-result-mobile': 'Структурований лендінг із блоками:<br /> послуги, команда, відгуки та форма<br/> заявки, який зручно сприймається та<br/> веде користувача до контакту',
 
         // Project 02
         'project-02-desc': 'Лендінг для продажу навчальних<br />курсів з трейдингу',
         'project-02-desc-mobile': 'Лендінг для продажу навчальних<br />курсів з трейдингу',
         'project-02-task': 'Створити сайт, який просто та зрозуміло<br />пояснює цінність курсу, структурує<br />інформацію та веде користувача до покупки',
-        'project-02-task-mobile': 'Створити сайт, який просто та зрозуміло<br />пояснює цінність курсу, структурує<br />інформацію та веде користувача до покупки',
-        'project-02-solution': 'Візуальну основу побудовано навколо<br />фірмової 3D-фігури, яка формує впізнаваність<br />бренду та використовується як навігаційний<br />елемент. Оранжевий колір використано як<br />акцент для ключових дій',
-        'project-02-solution-mobile': 'Візуальну основу побудовано навколо<br />фірмової 3D-фігури, яка формує впізнаваність<br />бренду та використовується як навігаційний<br />елемент. Оранжевий колір використано як<br />акцент для ключових дій',
+        'project-02-task-mobile': 'Створити сайт, який просто та зрозуміло<br />пояснює цінність курсу, структурує<br />інформацію та веде користувача<br/> до покупки',
+        'project-02-solution': 'Візуальну основу побудовано навколо<br /> фірмової 3D-фігури, яка формує впізнаваність<br /> бренду та використовується як навігаційний<br /> елемент. Оранжевий колір використано як<br /> акцент для ключових дій – кнопок, тарифів та<br /> важливих блоків, що допомагає сфокусувати<br /> увагу користувача. Сайт побудований за<br /> логікою: про компанію, про курс, програма<br /> курсу, відгуки, тарифи, FAQ та форма заявки',
+        'project-02-solution-mobile': 'Візуальну основу побудовано навколо<br /> фірмової 3D-фігури, яка формує<br /> впізнаваність бренду та<br /> використовується як навігаційний<br /> елемент. Оранжевий колір використано<br /> як акцент для ключових дій – кнопок,<br /> тарифів та важливих блоків, що<br /> допомагає сфокусувати увагу<br /> користувача. Сайт побудований за<br /> логікою: про компанію, про курс,<br /> програма курсу, відгуки, тарифи, FAQ<br /> та форма заявки',
         'project-02-result': 'Структурований лендінг, який послідовно<br />веде користувача від знайомства з<br />продуктом до оформлення заявки',
-        'project-02-result-mobile': 'Структурований лендінг, який послідовно<br />веде користувача від знайомства з<br />продуктом до оформлення заявки',
+        'project-02-result-mobile': 'Структурований лендінг, який<br /> послідовно веде користувача від<br /> знайомства з продуктом до<br /> оформлення заявки',
 
         // Project 03–05 (аналогічно)
         'project-03-desc': 'Багатосторінковий сайт для презентації<br />клубу та запису на тренування',
         'project-03-desc-mobile': 'Багатосторінковий сайт для презентації<br />клубу та запису на тренування',
         'project-03-task': 'Передати атмосферу клубу, підкреслити<br />його характер та зробити зручний запис<br />на тренування',
-        'project-03-task-mobile': 'Передати атмосферу клубу, підкреслити<br />його характер та зробити зручний запис<br />на тренування',
+        'project-03-task-mobile': 'Передати атмосферу клубу, підкреслити<br />його характер та зробити зручний<br /> запис на тренування',
+        'project-03-solution-mobile': 'Обрано вінтажну стилістику, що<br /> відображаєхарактер клубу та створює<br /> відчуття історії й спільноти. Структура<br /> сайту включає: про клуб, команду,<br /> історію, запис натренування та розділ<br /> з фірмовим мерчем',
         'project-03-solution': 'Обрано вінтажну стилістику, що відображає<br />характер клубу та створює відчуття історії<br />й спільноти. Структура сайту включає:<br />про клуб, команду, історію, запис на<br />тренування та розділ з фірмовим мерчем',
-        'project-03-solution-mobile': 'Обрано вінтажну стилістику, що відображає<br />характер клубу та створює відчуття історії<br />й спільноти. Структура сайту включає:<br />про клуб, команду, історію, запис на<br />тренування та розділ з фірмовим мерчем',
-        'project-03-result': 'Зрозумілий багатосторінковий сайт, який<br />поєднує презентацію бренду клубу та<br />зручну взаємодію з користувачем',
-        'project-03-result-mobile': 'Зрозумілий багатосторінковий сайт, який<br />поєднує презентацію бренду клубу та<br />зручну взаємодію з користувачем',
+        'project-03-result': 'Зрозумілий багатосторінковий сайт,<br /> який поєднує презентацію бренду клубу<br /> та зручну взаємодію з користувачем',
+        'project-03-result-mobile': 'Зрозумілий багатосторінковий сайт,<br /> якийпоєднує презентацію бренду клубу<br /> тазручну взаємодію з користувачем',
 
-        'project-04-desc': 'Редизайн багатосторінкового сайту для<br />компанії, що спеціалізується на медичних просторах',
-        'project-04-desc-mobile': 'Редизайн багатосторінкового сайту для<br />компанії, що спеціалізується на медичних просторах',
+        'project-04-desc': 'Редизайн багатосторінкового сайту для<br />компанії, що спеціалізується на<br /> медичних просторах',
+        'project-04-desc-mobile': 'Редизайн багатосторінкового сайту<br /> для компанії, що спеціалізується<br /> на медичних просторах',
         'project-04-task': 'Оновити візуальний стиль сайту та зробити<br />його більш сучасним, зберігаючи існуючу<br />структуру та побажання клієнта по дизайну',
-        'project-04-task-mobile': 'Оновити візуальний стиль сайту та зробити<br />його більш сучасним, зберігаючи існуючу<br />структуру та побажання клієнта по дизайну',
+        'project-04-task-mobile': 'Оновити візуальний стиль сайту та <br />зробити його більш сучасним,<br /> зберігаючи існуючу структуру та<br /> побажання клієнта по дизайну',
         'project-04-solution': 'Проєкт реалізовано на основі готової<br /> структури та референсів від клієнта.<br />Дизайн виконано у стриманій бежево-<br />коричневій палітрі, що підкреслює<br /> професійність та специфіку медичної сфери. Сайт включає сторінки: про<br />компанію, послуги та форму заявки<br /> для зручної взаємодії',
-        'project-04-solution-mobile': 'Проєкт реалізовано на основі готової<br /> структури та референсів від клієнта.<br />Дизайн виконано у стриманій бежево-<br />коричневій палітрі, що підкреслює<br /> професійність та специфіку медичної сфери. Сайт включає сторінки: про<br />компанію, послуги та форму заявки<br /> для зручної взаємодії',
+        'project-04-solution-mobile': 'Проєкт реалізовано на основі готової<br /> структури та референсів від клієнта.<br />Дизайн виконано у стриманій бежево-<br />коричневій палітрі, що підкреслює<br /> професійність та специфіку медичної<br /> сфери. Сайт включає сторінки: про<br />компанію, послуги та форму заявки<br /> для зручної взаємодії',
         'project-04-result': 'Оновлений сайт із сучасним дизайном,<br />який зберігає логіку структури та краще<br />презентує компанію онлайн',
         'project-04-result-mobile': 'Оновлений сайт із сучасним дизайном,<br />який зберігає логіку структури та краще<br />презентує компанію онлайн',
 
@@ -223,10 +223,10 @@ const translations = {
 
         'about-us': '[ About us ]',
         'about-us-mobile': '[ About us ]',
-        'about-title': 'We help companies<br />look professional online',
-        'about-title-mobile': 'We help companies<br />look professional online',
+        'about-title': 'We help businesses present<br/> themselves professionally online',
+        'about-title-mobile': 'We help businesses<br/> present themselves<br/> professionally online',
         'about-desc': 'We combine strategy, design and development<br />to create websites that work for business',
-        'about-desc-mobile': 'We combine strategy, design and development<br />to create websites that work for business',
+        'about-desc-mobile': 'We combine strategy, design<br/> and development to create websites<br/> that work for business',
 
         'service-01-title': 'Landing Page',
         'service-01-title-mobile': 'Landing Page',
@@ -340,30 +340,30 @@ const translations = {
 
         'project-02-desc': 'Landing page for selling trading courses',
         'project-02-desc-mobile': 'Landing page for selling trading courses',
-        'project-02-task': 'Create a website that clearly explains the value of the course, structures the information, and guides the user toward purchase',
+        'project-02-task': 'Create a website that clearly explains the value<br /> of the course, structures the information, and<br /> guides the user toward purchase',
         'project-02-task-mobile': 'Create a website that clearly explains the value of the course, structures the information, and guides the user toward purchase',
-        'project-02-solution': 'The visual concept is built around a branded 3D character that enhances recognition and is used as a navigation element. Orange is used as an accent color for key actions',
-        'project-02-solution-mobile': 'The visual concept is built around a branded 3D character that enhances recognition and is used as a navigation element. Orange is used as an accent color for key actions',
-        'project-02-result': 'A structured landing page that consistently guides the user from introduction to the product through to submitting an application',
-        'project-02-result-mobile': 'A structured landing page that consistently guides the user from introduction to the product through to submitting an application',
+        'project-02-solution': 'The visual concept is built around a branded 3D <br/>character that enhances recognition and is used<br/> as a navigation element. Orange is used as an<br/> accent color for key actions – buttons, pricing,<br/> and important sections –helping to focus user<br/> attention. The structure includes: about the<br/> company, course overview, program,<br/> testimonials, pricing options, FAQ, and<br/> a contact form',
+        'project-02-solution-mobile': 'The visual concept is built around a branded 3D <br/>character that enhances recognition and is used<br/> as a navigation element. Orange is used as an<br/> accent color for key actions – buttons, pricing,<br/> and important sections –helping to focus user<br/> attention. The structure includes: about the<br/> company, course overview, program,<br/> testimonials, pricing options, FAQ, and<br/> a contact form',
+        'project-02-result': 'A structured landing page that consistently<br/> guides the user from introduction to the product<br/> through to submitting an application',
+        'project-02-result-mobile': 'A structured landing page that consistently<br/> guides the user from introduction to the product<br/> through to submitting an application',
 
         // (project-03, 04, 05 — аналогічно, текст повністю збігається з десктопом)
-        'project-03-desc': 'Multi-page website for presenting the club and booking training sessions',
-        'project-03-desc-mobile': 'Multi-page website for presenting the club and booking training sessions',
-        'project-03-task': 'Convey the atmosphere of the club, highlight its character, and make the booking process simple and convenient',
+        'project-03-desc': 'Multi-page website for presenting the club<br/> and booking training sessions',
+        'project-03-desc-mobile': 'Multi-page website for presenting the club<br/> and booking training sessions',
+        'project-03-task': 'Convey the atmosphere of the club, highlight<br/> its character, and make the booking process<br/> simple and convenient',
         'project-03-task-mobile': 'Convey the atmosphere of the club, highlight its character, and make the booking process simple and convenient',
-        'project-03-solution': 'A vintage-inspired visual style was chosen to reflect the club’s character and create a sense of history and community. The structure includes: about the club, team, history, training booking, and a merchandise section',
+        'project-03-solution': 'A vintage-inspired visual style was chosen to<br/> reflect the club’s character and create a sense<br/> of history and community. The structure<br/> includes: about the club, team, history, training<br/> booking, and a merchandise section',
         'project-03-solution-mobile': 'A vintage-inspired visual style was chosen to reflect the club’s character and create a sense of history and community. The structure includes: about the club, team, history, training booking, and a merchandise section',
-        'project-03-result': 'A clear multi-page website that combines brand presentation with a seamless user experience',
+        'project-03-result': 'A clear multi-page website that combines brand<br/> presentation with a seamless user experience',
         'project-03-result-mobile': 'A clear multi-page website that combines brand presentation with a seamless user experience',
 
-        'project-04-desc': 'Redesign of a multi-page website for a company specializing in medical spaces',
+        'project-04-desc': 'Redesign of a multi-page website for a<br /> company specializing in medical spaces',
         'project-04-desc-mobile': 'Redesign of a multi-page website for a company specializing in medical spaces',
-        'project-04-task': 'Update the visual style of the website and make it more modern, while preserving the existing structure and the client’s design preferences',
+        'project-04-task': 'Update the visual style of the website and make<br /> it more modern, while preserving the existing<br /> structure and the client’s design preferences',
         'project-04-task-mobile': 'Update the visual style of the website and make it more modern, while preserving the existing structure and the client’s design preferences',
-        'project-04-solution': 'The project was based on an existing structure and client-provided references. The design was executed in a restrained beige and brown palette, reflecting professionalism and the specifics of the medical field. The website includes pages for the company overview, services, and a contact form for convenient interaction',
+        'project-04-solution': 'The project was based on an existing structure<br /> and client-provided references. The design<br /> was executed in a restrained beige and<br /> brown palette, reflecting professionalism<br /> and the specifics of the medical field. The<br /> website includes pages for the company<br /> overview, services, and a contact form for<br /> convenient interaction',
         'project-04-solution-mobile': 'The project was based on an existing structure and client-provided references. The design was executed in a restrained beige and brown palette, reflecting professionalism and the specifics of the medical field. The website includes pages for the company overview, services, and a contact form for convenient interaction',
-        'project-04-result': 'An updated website with a modern design that preserves the original structure and presents the company more effectively online',
+        'project-04-result': 'An updated website with a modern design that<br /> preserves the original structure and presents<br /> the company more effectively online',
         'project-04-result-mobile': 'An updated website with a modern design that preserves the original structure and presents the company more effectively online',
 
 
@@ -546,7 +546,7 @@ if (cursorBtn) {
             cursorBtn.classList.add('visible');
 
             if (isDevelopmentProject) {
-                cursorBtn.textContent = 'В разработке';
+                cursorBtn.textContent = 'В роботі → ';
                 cursorBtn.classList.add('in-development');
             } else {
                 cursorBtn.textContent = originalText;        // возвращаем обычную надпись

@@ -485,6 +485,9 @@ span {
 
 /* brbr — строка 2, колонка 2 — ровно под Design studio */
 .header-buttons .brbr {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
     grid-column: 2;
     grid-row: 2;
     margin-top: 19rem;
@@ -506,7 +509,8 @@ span {
     align-self: center;
 }
 .brbr p {
-    
+    display: flex;
+    flex-direction: row;
     font-size: 1.5rem;
     line-height: 130%;
     margin: 0;

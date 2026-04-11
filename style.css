@@ -112,15 +112,13 @@ a.arr, a.arrow-but {
 :root {
     --grid-offset: 19.2vw;
     --text3-current: 2.5vw;
-    --sixth-title-current: -2.5vw;
+    
     --brbr-current: 19vw;
     --right-col: 25.5vw;   /* ← добавить */
     --about-offset: 7.5vw
 }
 
-.about3 {
-    margin-left: calc(var(--grid-offset) + var(--text3-current));
-}
+
 
 .sixth-title {
     margin-left: calc(var(--grid-offset) - var(--sixth-title-current));
@@ -263,7 +261,7 @@ h1 {
 }
 
 h2 {
-    font-size: 4.125rem;
+    font-size: clamp(2rem, 3.44vw, 4.125rem);
     line-height: 1.2;
     letter-spacing: -0.01em;
     font-weight: 400;
@@ -466,11 +464,10 @@ span {
 
 .header-buttons {
     display: grid;
-    grid-template-columns: auto 19.2vw auto auto auto;
+    grid-template-columns: var(--right-col) auto 1fr auto;
     grid-template-rows: auto auto;
     align-items: start;
     width: 100%;
-    
 }
 
 /* Лого — строка 1, колонка 1 */
@@ -481,7 +478,6 @@ span {
 
 /* Design studio — строка 1, колонка 2 */
 .header-buttons .pup {
-    
     grid-column: 2;
     grid-row: 1;
     align-self: center;
@@ -489,12 +485,8 @@ span {
 
 /* brbr — строка 2, колонка 2 — ровно под Design studio */
 .header-buttons .brbr {
-    width: max-content;
     grid-column: 2;
     grid-row: 2;
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
     margin-top: 19rem;
 }
 
@@ -504,15 +496,15 @@ span {
     grid-row: 1;
     align-self: center;
     justify-self: start;
+    margin-left: var(--right-col); /* убрать */
 }
 
 /* Бургер — строка 1, колонка 5 */
 .header-buttons .burger {
-    grid-column: 5;
+    grid-column: 4;
     grid-row: 1;
     align-self: center;
 }
-
 .brbr p {
     
     font-size: 1.5rem;
@@ -540,7 +532,7 @@ span {
 button.language {
     display: flex;
     margin-right: 0;
-    margin-left: var(--right-col); /* выравнивание по оси Design studio right */
+    margin-left: 0; /* убрать var(--right-col) */
     align-items: center;
     gap: 0.65rem;
     border: none;
@@ -709,20 +701,16 @@ button.language {
 /* ================================================ */
 
 .second-screen {
-    display: flex;
-    
+    display: grid;
+    grid-template-columns: var(--right-col) 1fr;
     align-items: flex-start;
     padding: clamp(1rem, 2.08vw, 5rem);
 }
 
 .about-us {
+    grid-column: 1;
     position: relative;
     min-height: 10rem;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    
-    
 }
 
 .ab-text {
@@ -744,21 +732,21 @@ button.language {
 }
 
 .about {
+    grid-column: 2;
     width: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: clamp(1.5rem, 3vw, 2.5rem);
-  
-  /* Главная формула — зависит от language */
-  margin-left: calc(var(--right-col) - var(--about-offset));
-  
-  /* Защита от поломок + плавность */
-  margin-left: clamp(
-    8vw,
-    calc(var(--right-col) - var(--about-offset)),
-    22vw
-  );
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: clamp(1.5rem, 3vw, 2.5rem);
+    
+}
+
+
+.about-inner {
+    margin-left: var(--right-col);
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - var(--right-col)); /* чтобы не вылезал */
 }
 
 .text {
@@ -789,13 +777,14 @@ button.language {
 /* ================================================ */
 
 .third-screen {
-    display: flex;
-    
+    display: grid;
+    grid-template-columns: var(--right-col) 1fr;
     align-items: flex-start;
     padding: clamp(1rem, 2.08vw, 5rem);
 }
 
 .process {
+    grid-column: 1;
     position: relative;
     min-height: 10rem;
 }
@@ -807,8 +796,11 @@ button.language {
 }
 
 .about3 {
+    grid-column: 2;
     display: flex;
     flex-direction: column;
+    min-width: 0;
+    
 }
 
 
@@ -825,16 +817,16 @@ button.language {
 
 .services3 .title {
 
-    font-size: 3.375rem;
+    font-size: clamp(1.75rem, 2.8vw, 3.375rem);
 }
 
 .services3 .num {
-    font-size: 3.375rem;
+    font-size: clamp(1.75rem, 2.8vw, 3.375rem);
 }
 
 .services3 .service-body p {
     margin-left: 3.5rem;
-    font-size:2rem !important;
+    font-size: clamp(1.25rem, 1.67vw, 2rem);
 }
 
 
@@ -1036,12 +1028,27 @@ margin: clamp(2.5rem, 6vw, 3rem) 0 clamp(1.5rem, 4vw, 3rem) 0;
 }
 
 .sixth-top {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: var(--right-col) 1fr auto;
     align-items: flex-start;
     margin-bottom: 2rem;
     z-index: 1;
 }
+
+.sixth-top .ab-text {
+    grid-column: 1;
+}
+
+
+.sixth-top .sixth-title {
+    grid-column: 2;
+    margin: 0;
+}
+
+.sixth-top .icon-plus-contact {
+    grid-column: 3;
+}
+
 
 .sixth-title {
     margin-top: 0;
@@ -1056,22 +1063,23 @@ margin: clamp(2.5rem, 6vw, 3rem) 0 clamp(1.5rem, 4vw, 3rem) 0;
 }
 
 .sixth-contacts {
-    display: flex;
+    display: grid;
+    grid-template-columns: var(--right-col) 1fr;
     align-items: center;
-    
     margin-bottom: 2rem;
     z-index: 1;
 }
 
 .sixth-label {
-    margin-left: calc(var(--grid-offset) - var(--sixth-title-current));
+    grid-column: 2;
+    margin-left: 0; /* убрать старый margin-left */
     opacity: 0.4;
-    
     white-space: nowrap;
 }
 
 .sixth-links {
-    margin-left: calc(var(--right-col) - var(--grid-offset) - var(--sixth-title-current)*2);
+    grid-column: 2;
+    margin-left: var(--right-col);
     display: flex;
     gap: 3.5rem;
 }
@@ -1121,26 +1129,32 @@ margin: clamp(2.5rem, 6vw, 3rem) 0 clamp(1.5rem, 4vw, 3rem) 0;
 }
 
 .sixth-footer {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: var(--right-col) 1fr auto;
     align-items: center;
     padding-top: 2.5rem;
-    margin-top: 0;
+    position: relative;
+    z-index: 1;
 }
 
 .sixth-copy {
+    grid-column: 1;
     opacity: 0.3;
-    
     white-space: nowrap;
 }
 
 .sixth-nav {
-    margin-left: calc(var(--sixth-title-current)*3);
+    grid-column: 2;
+    margin-left: var(--right-col); /* под кнопку языка */
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
+}
+
+.sixth-socials {
+    grid-column: 3;
+    display: flex;
+    gap: 0.5rem;
 }
 
 .sixth-nav a {
@@ -1170,10 +1184,7 @@ margin: clamp(2.5rem, 6vw, 3rem) 0 clamp(1.5rem, 4vw, 3rem) 0;
     width: 100%;
 }
 
-.sixth-socials {
-    display: flex;
-    gap: 0.5rem;
-}
+
 
 .social-btn {
     position: relative;

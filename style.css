@@ -15,6 +15,12 @@
 }
 
 
+body {
+    overflow-x: hidden;
+}
+
+
+
 /* ================================================ */
 /* ГЛОБАЛЬНЫЕ СТИЛИ */
 /* ================================================ */
@@ -22,7 +28,9 @@
 .desktop { display: block; }
 .mobile { display: none; }
 
-
+.project-item {
+    cursor: none;
+}
 a.arr, a.arrow-but {
     display: flex;
     align-items: center;
@@ -125,9 +133,7 @@ a.arr, a.arrow-but {
     text-align: left;
 }
 
-.brbr {
-    margin-left: calc(var(--grid-offset) - var(--brbr-current));
-}
+
 
 /* cookie-banner.css */
 
@@ -434,7 +440,11 @@ span {
     background-size: 100% auto;
     background-position: top center;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
 
 
 .first2 {
@@ -451,6 +461,7 @@ span {
 /* FIRST SCREEN — ХЕДЕР (обновлённый грид) */
 /* ================================================ */
 .header {
+    flex: 0 0 auto; /* ← не растягивается */
     padding: clamp(1rem, 2.08vw, 2.5rem);
     width: 100%;
     box-sizing: border-box;
@@ -465,9 +476,10 @@ span {
 .header-buttons {
     display: grid;
     grid-template-columns: var(--right-col) auto 1fr auto;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto 1fr auto;
     align-items: start;
     width: 100%;
+    min-height: 100%;
 }
 
 /* Лого — строка 1, колонка 1 */
@@ -489,8 +501,15 @@ span {
     flex-direction: row;
     gap: 1.25rem;
     grid-column: 2;
-    grid-row: 2;
-    margin-top: 19rem;
+    grid-row: 2; /* ← верни на row 2 */
+    align-self: center;
+    margin-top: 40%;
+    top: 50%;
+}
+
+
+.header-buttons {
+    grid-template-rows: auto 1fr auto;
 }
 
 /* Язык — строка 1, колонка 4 */
@@ -528,7 +547,8 @@ span {
 
 .LAO {
     
-    height: clamp(3rem, 4.27vw, 5.125rem);
+    width: clamp(2.5rem, 3.5vw, 5.8125rem);
+height: clamp(2.25rem, 3vw, 5.125rem);
     transform: rotate(0deg);
     opacity: 1;
 }
@@ -589,13 +609,13 @@ button.language {
 
 
 .hero {
+    flex: 1; /* ← растягивается */
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
-    min-height: calc(50vh );
     padding: clamp(1rem, 2.08vw, 2.5rem);
-    padding-bottom: clamp(3rem, 5vw, 6rem);
+    
     width: 100%;
 }
 
@@ -979,13 +999,13 @@ button.language {
 
 .project-num {
     color: #D04200;
-    font-size: clamp(0.75rem, 1vw, 1rem);
+    font-size: clamp(1.25rem, 1vw, 1.25rem);
     white-space: nowrap;
 }
 
 .project-name {
     color: rgba(249, 249, 249, 0.7);
-    font-size: clamp(0.75rem, 1vw, 1rem);
+    font-size: clamp(1.25rem, 1vw, 1.25rem);
 }
 
 .line-divider {
@@ -1086,6 +1106,7 @@ margin: clamp(2.5rem, 6vw, 3rem) 0 clamp(1.5rem, 4vw, 3rem) 0;
     margin-left: var(--right-col);
     display: flex;
     gap: 3.5rem;
+    margin-top: -2rem; /* подними вверх */
 }
 
 .sixth-links a {
@@ -1153,6 +1174,7 @@ margin: clamp(2.5rem, 6vw, 3rem) 0 clamp(1.5rem, 4vw, 3rem) 0;
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
+    align-items: flex-start;
 }
 
 .sixth-socials {
@@ -1167,6 +1189,7 @@ margin: clamp(2.5rem, 6vw, 3rem) 0 clamp(1.5rem, 4vw, 3rem) 0;
     text-decoration: none;
     font-size: clamp(0.75rem, 1vw, 1rem);
     transition: color 0.3s ease;
+    display: inline-block;
 }
 
 .sixth-nav a::after {

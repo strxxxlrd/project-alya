@@ -7,12 +7,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./mobile.css">
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 
 
 
 
 <body>
+    
 
     <div class="loader" id="loader">
         <div class="loader-center">
@@ -97,14 +101,14 @@
     </section>
     <section class="description">
         <div class="parent btn-group">
-            <button class="arr corner-box"><i></i><span data-i18n="discuss-project">Обговорити проект</span></button>
-            <button class="arrow-but corner-box">
-                <i></i>
-                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17" fill="none">
-                    <path d="M12 1.5L19 8.5M19 8.5L12 15.5M19 8.5H1.5" stroke="#D04200" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </button>
-        </div>
+    <a href="https://t.me/a1202al" class="arr corner-box"><i></i><span data-i18n="discuss-project">Обговорити проект</span></a>
+    <a href="https://t.me/a1202al" class="arrow-but corner-box">
+        <i></i>
+        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17" fill="none">
+            <path d="M12 1.5L19 8.5M19 8.5L12 15.5M19 8.5H1.5" stroke="#D04200" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </a>
+</div>
     </section>
 </div>
     </section>
@@ -118,15 +122,15 @@
             <div class="about-inner">
             <section class="text">
                 <h3 class="desktop" data-i18n="about-title">Ми допомагаємо компаніям<br />виглядати професійно в онлайнi</h3>
-                <h3 class="mobile" data-i18n="about-title">Ми допомагаємо<br />компаніям виглядати<br /> професійно в онлайнi</h3>
+                <h3 class="mobile" data-i18n="about-title-mobile">Ми допомагаємо<br />компаніям виглядати<br /> професійно в онлайнi</h3>
                 <p class="desktop" data-i18n="about-desc">Поєднуємо стратегію, дизайн та розробку,<br />щоб створювати сайти, які працюють на
                     бізнес</p>
-                <p class="mobile" data-i18n="about-desc">Поєднуємо стратегію, дизайн та<br /> розробку,щоб створювати сайти,<br /> які працюють
+                <p class="mobile" data-i18n="about-desc-mobile">Поєднуємо стратегію, дизайн та<br /> розробку,щоб створювати сайти,<br /> які працюють
                     на бізнес</p>
             </section>
             
-            <section class="services">
-                <div class="service-item">
+            <section class="services" >
+                <div class="service-item" >
                     <div class="service-header" onclick="toggle(this)">
                         <span class="num">[ 01 ]</span>
                         <span class="title" data-i18n="service-01-title">Односторінковий сайт</span>
@@ -163,7 +167,7 @@
                             пояснити пропозицію,показати переваги та привести клієнта до заявки
                         </p>
 
-                        <p class="mobile" data-i18n="service-01-desc">Підходить для запуску нового<br />
+                        <p class="mobile" data-i18n="service-01-desc-mobile">Підходить для запуску нового<br />
                             продукту, рекламної кампанії<br />
                             або презентації конкретної<br />
                             послуги. Такий сайт допомагає<br />
@@ -211,7 +215,7 @@
                             послуги, проєкти та створити професійний онлайн-імідж
                         </p>
 
-                        <p class="mobile" data-i18n="service-02-desc">
+                        <p class="mobile" data-i18n="service-02-desc-mobile">
                             Підходить для компаній, яким<br />
                             важливо повноцінно представити<br />
                             бізнес в інтернеті. На такому сайті<br />
@@ -258,7 +262,7 @@
                             у використанні. Ми оновлюємо структуру, дизайн та робимо сайт<br />
                             більш зрозумілим для користувачів
                         </p>
-                        <p class="mobile" data-i18n="service-03-desc">
+                        <p class="mobile" data-i18n="service-03-desc-mobile">
                             Підходить, якщо сайт вже існує,<br />
                             але виглядає застаріло або<br />
                             незручний у використанні.<br />
@@ -324,7 +328,7 @@
                             Аналізуємо бізнес, цільову аудиторію та конкурентів.<br />
                             Формуємо основу майбутнього сайту
                         </p>
-                        <p class="mobile" data-i18n="strategy-desc">
+                        <p class="mobile" data-i18n="strategy-desc-mobile">
                             Аналізуємо бізнес, цільову<br />
                             аудиторію та конкурентів.<br />
                             Формуємо основу<br />
@@ -363,7 +367,7 @@
                             Формуємо логіку сторінок, сценарій користувача<br />
                             та створюємо прототип майбутнього сайту
                         </p>
-                        <p class="mobile" data-i18n="structure-desc">
+                        <p class="mobile" data-i18n="structure-desc-mobile">
                             Формуємо логіку сторінок,<br />
                             сценарій користувача<br />
                             та створюємо прототип<br />
@@ -402,7 +406,7 @@
                             Розробляємо візуальну концепцію сайту,<br />
                             підбираємо стиль та створюємо дизайн сторінок
                         </p>
-                        <p class="mobile" data-i18n="design-desc">
+                        <p class="mobile" data-i18n="design-desc-mobile">
                             Розробляємо візуальну<br />
                             концепцію сайту,<br />
                             підбираємо стиль та<br />
@@ -442,7 +446,7 @@
                             Верстаємо сайт, підключаємо необхідні<br />
                             функції та готуємо його до запуску
                         </p>
-                        <p class="mobile" data-i18n="development-desc">
+                        <p class="mobile" data-i18n="development-desc-mobile">
                             Верстаємо сайт,<br />
                             підключаємо необхідні<br />
                             функції та готуємо його<br />
@@ -476,32 +480,35 @@
         </div>
         <div class="projects-grid">
             <section>
-                <div class="project-item"><img src="./img/Rectangle37.png" alt="Проект 1">
-                    <div class="project-caption">
-                        <span class="project-num">/ 01</span><span
-                            class="project-name" data-i18n="project-01">Маркетингова агенція</span></div>
-                </div>
+                <div class="project-item" data-href="./project-01.html"><img src="./img/Rectangle37.png" alt="Проект 1">
+    <div class="project-caption">
+        <span class="project-num">/ 01</span><span class="project-name" data-i18n="project-01">Маркетингова агенція</span>
+    </div>
+</div>
             </section>
             <section>
-                <div class="project-item"><img src="./img/Rectangle38.png" alt="Проект 2">
-                    <div class="project-caption"><span class="project-num">/ 02</span><span
-                            class="project-name" data-i18n="project-02">Криптошкола</span></div>
-                </div>
+                <div class="project-item" data-href="./project-02.html"><img src="./img/Rectangle38.png" alt="Проект 2">
+    <div class="project-caption">
+        <span class="project-num">/ 02</span><span class="project-name" data-i18n="project-02">Криптошкола</span>
+    </div>
+</div>
             </section>
         </div>
         <div class="line-divider desktop"></div>
         <div class="fifth-bottom">
-            <section>
-                <div class="project-item"><img src="./img/Rectangle39.jpg" alt="Проект 3">
-                    <div class="project-caption"><span class="project-num">/ 03</span><span
-                            class="project-name" data-i18n="project-03">Спортивний клуб</span></div>
-                </div>
+            <section >
+                <div class="project-item" data-href="./project-03.html"><img src="./img/Rectangle39.jpg" alt="Проект 3">
+    <div class="project-caption">
+        <span class="project-num">/ 03</span><span class="project-name" data-i18n="project-03">Спортивний клуб</span>
+    </div>
+</div>
             </section>
             <section>
-                <div class="project-item"><img src="./img/Rectangle40.png" alt="Проект 4">
-                    <div class="project-caption"><span class="project-num">/ 04</span><span
-                            class="project-name" data-i18n="project-05">Житловий комплекс</span></div>
-                </div>
+                <div class="project-item" data-status="wip"><img src="./img/Rectangle40.png" alt="Проект 4">
+    <div class="project-caption">
+        <span class="project-num">/ 04</span><span class="project-name" data-i18n="project-05">Житловий комплекс</span>
+    </div>
+</div>
             </section>
             <div class="fifth-footer">
                 <div class="parent btn-group">
@@ -539,7 +546,7 @@
         <div class="sixth-contacts">
             <span class="sixth-label" data-i18n="messengers">Напишіть у зручний месенджер:</span>
             <div class="sixth-links">
-                <a href="#">Instagram</a>
+                <a href="https://www.instagram.com/12lao.studio?igsh=MW5qMmFkdGRvcTJ3NA%3D%3D&utm_source=qr">Instagram</a>
                 <a href="https://t.me/a1202al">Telegram</a>
                 <a href="https://api.whatsapp.com/send/?phone=380733408623&text&type=phone_number&app_absent=0">Whatsapp</a>
             </div>
@@ -615,7 +622,7 @@
             <a href="https://t.me/a1202al" class="bm-social">
                 <img src="./img/mobi/Component_11.png" alt="Telegram">
             </a>
-            <a href="https://api.whatsapp.com/send/?phone=380733408623&text&type=phone_number&app_absent=0" class="bm-social">
+            <a href="https://www.instagram.com/12lao.studio?igsh=MW5qMmFkdGRvcTJ3NA%3D%3D&utm_source=qr" class="bm-social">
                 <img src="./img/mobi/Component_12.png" alt="Instagram">
             </a>
             <a href="https://www.behance.net/12laostudio/appreciated" class="bm-social">
@@ -628,6 +635,41 @@
 
 
     <script src="./script.js"></script>
+    <script>
+const lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    smooth: true,
+});
+
+function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
+</script>
+<script>
+gsap.registerPlugin(ScrollTrigger);
+
+// Все элементы которые будут появляться
+const fadeEls = document.querySelectorAll(
+    'h1, h2, h3, .service-header, .project-item, .sixth-title, .brbr, .btn-group, .ab-text'
+);
+
+fadeEls.forEach(el => {
+    gsap.from(el, {
+        scrollTrigger: {
+            trigger: el,
+            start: 'top 90%',
+        },
+        opacity: 0,
+        y: 40,
+        duration: 0.8,
+        ease: 'power2.out',
+    });
+});
+</script>
+    <div class="cursor-btn" id="cursorBtn">Переглянути →</div>
 </body>
 
 </html>

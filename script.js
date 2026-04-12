@@ -23,7 +23,7 @@ const translations = {
         'hero-text': 'Лендінги та корпоративні сайти<br />для компаній, що хочуть виглядати<br />сучасно та залучати нових клієнтів',
         'hero-text-mobile': 'Лендінги та корпоративні сайти<br />для компаній, що хочуть виглядати<br />сучасно та залучати нових клієнтів',
         'hero-title': 'Структура.<br /> Дизайн. Результат.',
-        'hero-title-mobile': 'Структура.<br /> Дизайн. Результат.',
+        'hero-title-mobile': 'Структура.<br /> Дизайн.<br /> Результат.',
         'discuss-project': 'Обговорити проект',
         'discuss-project-mobile': 'Обговорити проект',
 
@@ -31,7 +31,7 @@ const translations = {
         'about-us': '[ Про нас ]',
         'about-us-mobile': '[ Про нас ]',
         'about-title': 'Ми допомагаємо компаніям<br />виглядати професійно в онлайнi',
-        'about-title-mobile': 'Ми допомагаємо<br /> компаніямвиглядати<br/> професійно в онлайнi',
+        'about-title-mobile': 'Ми допомагаємо<br /> компаніям виглядати<br/> професійно в онлайнi',
         'about-desc': 'Поєднуємо стратегію, дизайн та розробку,<br />щоб створювати сайти, які працюють на бізнес',
         'about-desc-mobile': 'Поєднуємо стратегію, дизайн та<br /> розробку,щоб створювати сайти,<br/> які працюють на бізнес',
 
@@ -548,68 +548,58 @@ document.addEventListener('DOMContentLoaded', () => {
 // ================================================
 // CURSOR (works page)
 // ================================================
-const cursorBtn = document.getElementById('cursorBtn');
-const imgWraps = document.querySelectorAll('.work-img-wrap, .work-img-wrap2');
+document.addEventListener('DOMContentLoaded', () => {
+    const cursorBtn = document.getElementById('cursorBtn');
+    const imgWraps = document.querySelectorAll('.work-img-wrap, .work-img-wrap2, .project-item');
 
-if (cursorBtn) {
-    let currentHref = '#';
-    const originalText = cursorBtn.textContent;   // сохраняем оригинальную надпись «Переглянути →»
+    if (cursorBtn) {
+        let currentHref = '#';
+        const originalText = cursorBtn.textContent;
 
-    document.addEventListener('mousemove', (e) => {
-        cursorBtn.style.left = e.clientX + 'px';
-        cursorBtn.style.top  = e.clientY + 'px';
-    });
+        document.addEventListener('mousemove', (e) => {
+            cursorBtn.style.left = e.clientX + 'px';
+            cursorBtn.style.top  = e.clientY + 'px';
+        });
 
+        imgWraps.forEach(wrap => {
+            const link = wrap.getAttribute('data-href');
+            const isDevelopmentProject = 
+    wrap.getAttribute('data-status') === 'wip' || 
+    (wrap.closest('.work-row') && wrap.closest('.work-row').getAttribute('data-status') === 'wip');
+
+            wrap.addEventListener('mouseenter', () => {
+                currentHref = link || '#';
+                cursorBtn.classList.add('visible');
+                if (isDevelopmentProject) {
+                    cursorBtn.textContent = 'В роботі → ';
+                    cursorBtn.classList.add('in-development');
+                } else {
+                    cursorBtn.textContent = originalText;
+                    cursorBtn.classList.remove('in-development');
+                }
+            });
+
+            wrap.addEventListener('mouseleave', () => {
+                cursorBtn.classList.remove('visible', 'in-development');
+                cursorBtn.textContent = originalText;
+            });
+
+            wrap.addEventListener('mousedown', () => cursorBtn.classList.add('clicking'));
+            wrap.addEventListener('mouseup', () => {
+                cursorBtn.classList.remove('clicking');
+                if (!isDevelopmentProject && currentHref && currentHref !== '#') {
+                    window.location.href = currentHref;
+                }
+            });
+        });
+    }
+
+    // Клик работает всегда
     imgWraps.forEach(wrap => {
-        const link = wrap.getAttribute('data-href');
-
-        // ← ИСПРАВЛЕНИЕ: определяем пятый проект по data-status="wip"
-        const workRow = wrap.closest('.work-row');
-        const isDevelopmentProject = workRow && workRow.getAttribute('data-status') === 'wip';
-
-        wrap.addEventListener('mouseenter', () => {
-            currentHref = link || '#';
-
-            cursorBtn.classList.add('visible');
-
-            if (isDevelopmentProject) {
-                cursorBtn.textContent = 'В роботі → ';
-                cursorBtn.classList.add('in-development');
-            } else {
-                cursorBtn.textContent = originalText;        // возвращаем обычную надпись
-                cursorBtn.classList.remove('in-development');
-            }
+        wrap.addEventListener('click', () => {
+            const link = wrap.getAttribute('data-href');
+            if (link) window.location.href = link;
         });
-
-        wrap.addEventListener('mouseleave', () => {
-            cursorBtn.classList.remove('visible', 'in-development');
-            cursorBtn.textContent = originalText;            // сбрасываем на обычный текст
-        });
-
-        wrap.addEventListener('mousedown', () => {
-            cursorBtn.classList.add('clicking');
-        });
-
-        wrap.addEventListener('mouseup', () => {
-            cursorBtn.classList.remove('clicking');
-            
-            // Переход только если проект НЕ в разработке
-            if (!isDevelopmentProject && currentHref && currentHref !== '#') {
-                window.location.href = currentHref;
-            }
-        });
-    });
-}
-
-
-
-
-
-// Клик работает всегда — и без курсора и на мобиле
-imgWraps.forEach(wrap => {
-    wrap.addEventListener('click', () => {
-        const link = wrap.getAttribute('data-href');
-        if (link) window.location.href = link;
     });
 });
 

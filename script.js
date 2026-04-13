@@ -4,16 +4,16 @@
 const translations = {
     uk: {
         // Works page project names
-        'project-01-p': 'Маркетингова агенція',
-        'project-01-p-mobile': 'Маркетингова агенція',
-        'project-02-p': 'Крипто-школа',
-        'project-02-p-mobile': 'Крипто-школа',
-        'project-03-p': 'Спортивний клуб',
-        'project-03-p-mobile': 'Спортивний клуб',
-        'project-04-p': 'Студія дизайну інтер’єру',
-        'project-04-p-mobile': 'Студія дизайну інтер’єру',
-        'project-05-p': 'Житловий комплекс',
-        'project-05-p-mobile': 'Житловий комплекс',
+        'project-01-p1': 'Маркетингова агенція',
+        'project-01-p1-mobile': 'Маркетингова агенція',
+        'project-02-p1': 'Крипто-школа',
+        'project-02-p1-mobile': 'Крипто-школа',
+        'project-03-p1': 'Спортивний клуб',
+        'project-03-p1-mobile': 'Спортивний клуб',
+        'project-04-p1': 'Студія дизайну інтер’єру',
+        'project-04-p1-mobile': 'Студія дизайну інтер’єру',
+        'project-05-p1': 'Житловий комплекс',
+        'project-05-p1-mobile': 'Житловий комплекс',
 
         // Header
         'design-studio': 'Design studio',
@@ -214,16 +214,16 @@ const translations = {
 
     en: {
         // (англійська частина — повністю ідентично десктопу)
-        'project-01-p': 'Marketing Agency',
-        'project-01-p-mobile': 'Marketing Agency',
-        'project-02-p': 'Crypto School',
-        'project-02-p-mobile': 'Crypto School',
-        'project-03-p': 'Sports Club',
-        'project-03-p-mobile': 'Sports Club',
-        'project-04-p': 'Interior Design Studio',
-        'project-04-p-mobile': 'Interior Design Studio',
-        'project-05-p': 'Residential complex',
-        'project-05-p-mobile': 'Residential complex',
+        'project-01-p1': 'Marketing Agency',
+        'project-01-p1-mobile': 'Marketing Agency',
+        'project-02-p1': 'Crypto School',
+        'project-02-p1-mobile': 'Crypto School',
+        'project-03-p1': 'Sports Club',
+        'project-03-p1-mobile': 'Sports Club',
+        'project-04-p1': 'Interior Design Studio',
+        'project-04-p1-mobile': 'Interior Design Studio',
+        'project-05-p1': 'Residential complex',
+        'project-05-p1-mobile': 'Residential complex',
 
         'design-studio': 'Design studio',
         'design-studio-mobile': 'Design studio',

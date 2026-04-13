@@ -1154,10 +1154,11 @@ margin: clamp(2.5rem, 6vw, 3rem) 0 clamp(1.5rem, 4vw, 3rem) 0;
 }
 
 .sixth-contacts {
+    margin-top: 4.5rem;
     display: grid;
     grid-template-columns: var(--right-col) 1fr;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     
     z-index: 1;
 }
@@ -1165,7 +1166,7 @@ margin: clamp(2.5rem, 6vw, 3rem) 0 clamp(1.5rem, 4vw, 3rem) 0;
     display: grid;
     grid-template-columns: var(--right-col) auto 1fr;
     align-items: center;
-    margin-bottom: 2rem;
+   
 }
 
 .sixth-label {
@@ -1180,8 +1181,8 @@ margin: clamp(2.5rem, 6vw, 3rem) 0 clamp(1.5rem, 4vw, 3rem) 0;
 .sixth-contacts {
     display: grid;
     grid-template-columns: var(--right-col) 1fr;
-    gap: 0.5rem;
-    margin-bottom: 2rem;
+    
+    
 }
 
 .sixth-label {

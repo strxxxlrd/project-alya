@@ -48,15 +48,25 @@
     align-self: stretch;
 }
 
+
+.page-title p {
+    margin: 0;
+    
+}
+
+.marka{
+  margin-top: 2.65vw;
+}
+
 .page-info {
     position: relative;
     border-top: 1px solid rgba(249, 249, 249, 0.15);
-    padding: 2rem 0 0;
+    
     align-items: flex-start;
     width: 25%;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 5.95vw;
 }
 
 
@@ -91,8 +101,15 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0;
+    gap: 1.32vw;
     align-self: stretch;
+}
+
+
+.trisda {
+    display: flex;
+    flex-direction: column;
+    gap: 3.97vw;
 }
 
 .page-title p,

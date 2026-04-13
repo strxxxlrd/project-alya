@@ -703,3 +703,8 @@ video.addEventListener('click', (e) => {
 
 
 
+function toggleProc(el) {
+    const body = el.closest('.proc-item').querySelector('.proc-body');
+    el.classList.toggle('active');
+    body.classList.toggle('open');
+}

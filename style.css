@@ -291,8 +291,8 @@ p, a {
 }
 
 span {
-    font-size: clamp(0.875rem, 1.15vw, 1.375rem);
-    line-height: 1.3;
+    
+    
     letter-spacing: -0.01em;
     font-weight: 300;
     font-family: 'regular';
@@ -349,14 +349,52 @@ span {
 /* ================================================ */
 /* АККОРДЕОН (service-item) */
 /* ================================================ */
+.services .service-item {
+    display: grid;
+    grid-template-columns: 4rem 1fr auto;
+    
+    border-top: 1px solid rgba(249, 249, 249, 0.20);
+}
 
+.services .service-item:last-child {
+    border-bottom: 1px solid rgba(249, 249, 249, 0.20);
+}
+
+.services .service-header {
+    display: contents;
+    border-top: none;
+    border-bottom: none;
+}
+
+.services .service-body {
+    display: none;
+    grid-column: 2;
+    padding: 0 0 2rem;
+    border-bottom: none;
+}
+
+.services .service-body.open {
+    display: block;
+}
+
+.services .num,
+.services .title {
+    padding: 2rem 0;
+}
+.services .num{
+    font-size: 1.5rem;
+}
+.services .icon {
+    padding: 2rem 0;
+    align-self: start;
+}
 
 
 .service-header {
     display: flex;
     align-items: center;
     padding: 2rem 0;
-    gap: 2rem;
+    
     cursor: pointer;
     font-weight: 400;
     letter-spacing: -0.015rem;
@@ -366,6 +404,34 @@ span {
 }
 
 
+.services3 .num {
+    padding-right: 2rem;
+}
+.services3 .service-header {
+    display: contents !important;
+}
+.services3 .service-item {
+    display: grid;
+    grid-template-columns: 4rem 1fr auto;
+    gap: 0; /* без gap */
+    border-top: 1px solid rgba(249, 249, 249, 0.20);
+}
+
+.services3 .num {
+    padding: 2rem 2rem 2rem 0; /* справа gap вместо column-gap */
+}
+
+.services3 .title {
+    padding: 2rem 0;
+}
+
+.services3 .icon {
+    padding: 2rem 0 2rem 2rem; /* слева gap */
+    align-self: start;
+}
+.services3 .icon {
+    padding-left: 2rem;
+}
 
 .num {
     color: #D04200;
@@ -411,7 +477,7 @@ span {
 .service-body {
     
     display: none;
-    padding: 0 0 2rem 6rem;
+    
     color: rgba(249, 249, 249, 0.6);
     line-height: 1.3;
     border-bottom: 1px solid rgba(249, 249, 249, 0.20);
@@ -845,11 +911,12 @@ button.language {
 }
 
 .services3 .num {
+    white-space: nowrap;
     font-size: clamp(1.75rem, 2.8vw, 3.375rem);
 }
 
 .services3 .service-body p {
-    margin-left: 3.5rem;
+    padding:  0  0 2rem 0;
     font-size: clamp(1.25rem, 1.67vw, 2rem);
 }
 
@@ -1500,3 +1567,41 @@ border: 1px solid rgba(249, 249, 249, 0.20);
     background: rgba(208,66,0,0.6);
 }
 
+.services3 .service-item {
+    display: grid;
+    grid-template-columns: 4rem 1fr auto;
+    gap: 0 4rem;
+    border-top: 1px solid rgba(249, 249, 249, 0.20);
+}
+
+.services3 .service-item:last-child {
+    border-bottom: 1px solid rgba(249, 249, 249, 0.20);
+}
+
+.services3 .service-header {
+    display: contents; /* дети участвуют в гриде item */
+    border-top: none;
+    border-bottom: none;
+}
+
+.services3 .service-body {
+    display: none;
+    grid-column: 2; /* строго под .title */
+    
+    border-bottom: none;
+}
+
+.services3 .service-body.open {
+    display: block;
+}
+
+/* padding у .num и .title вместо padding у хедера */
+.services3 .num,
+.services3 .title {
+    padding: 3rem 0;
+}
+
+.services3 .icon {
+    padding: 3rem 0;
+    align-self: start;
+}

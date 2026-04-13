@@ -622,7 +622,7 @@
 
     .services3 .service-item {
         display: grid;
-        grid-template-columns: auto 1fr auto;
+        
         gap: 0;
     }
 
@@ -690,9 +690,8 @@
         grid-row: 2;
     }
 
-    .services3 .service-item {
-        grid-template-columns: auto 1fr;
-    }
+    
+
 
     .services3 .title {
         grid-column: 2;
@@ -718,7 +717,9 @@
 /* ================================================ */
 
 @media (max-width: 480px) {
-
+.services3 .service-item {
+        grid-template-columns: 5rem 1fr auto;
+    }
     html, body {
         overflow-x: hidden !important;
         max-width: 100% !important;

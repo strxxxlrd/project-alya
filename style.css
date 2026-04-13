@@ -1158,9 +1158,47 @@ margin: clamp(2.5rem, 6vw, 3rem) 0 clamp(1.5rem, 4vw, 3rem) 0;
     grid-template-columns: var(--right-col) 1fr;
     align-items: center;
     margin-bottom: 2rem;
+    
     z-index: 1;
 }
+.sixth-contacts {
+    display: grid;
+    grid-template-columns: var(--right-col) auto 1fr;
+    align-items: center;
+    margin-bottom: 2rem;
+}
 
+.sixth-label {
+    grid-column: 1;
+}
+
+.sixth-links {
+    grid-column: 2;
+    margin-left: 0;
+    margin-top: 0;
+}
+.sixth-contacts {
+    display: grid;
+    grid-template-columns: var(--right-col) 1fr;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.sixth-label {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.sixth-links {
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 0;
+    margin-top: 0;
+}
+.sixth-links {
+    margin-left: 0;
+    margin-top: 0;
+}
 .sixth-label {
     grid-column: 2;
     margin-left: 0; /* убрать старый margin-left */
@@ -1173,7 +1211,7 @@ margin: clamp(2.5rem, 6vw, 3rem) 0 clamp(1.5rem, 4vw, 3rem) 0;
     margin-left: var(--right-col);
     display: flex;
     gap: 3.5rem;
-    margin-top: -2rem; /* подними вверх */
+    
 }
 
 .sixth-links a {
@@ -1569,8 +1607,8 @@ border: 1px solid rgba(249, 249, 249, 0.20);
 
 .services3 .service-item {
     display: grid;
-    grid-template-columns: 4rem 1fr auto;
-    gap: 0 4rem;
+    grid-template-columns: 7rem 1fr auto;
+    
     border-top: 1px solid rgba(249, 249, 249, 0.20);
 }
 
@@ -1605,3 +1643,5 @@ border: 1px solid rgba(249, 249, 249, 0.20);
     padding: 3rem 0;
     align-self: start;
 }
+
+

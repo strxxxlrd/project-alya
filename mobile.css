@@ -193,6 +193,10 @@
 /* ================================================ */
 
 @media (max-width: 768px) {
+    html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
 
     @font-face {
         font-family: 'medium';

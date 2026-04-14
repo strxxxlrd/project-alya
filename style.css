@@ -25,6 +25,12 @@ html {
     text-size-adjust: none !important;
 }
 
+html {
+    font-size: 16px !important;
+    -webkit-text-size-adjust: none !important;
+    text-size-adjust: none !important;
+    touch-action: pan-x pan-y;
+}
 /* ================================================ */
 /* ГЛОБАЛЬНЫЕ СТИЛИ */
 /* ================================================ */

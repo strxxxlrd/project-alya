@@ -799,6 +799,37 @@
         overflow: hidden;
     }
 
+html {
+    font-size: 16px !important;
+    -webkit-text-size-adjust: none !important;
+    text-size-adjust: none !important;
+    touch-action: pan-x pan-y;
+}
+
+
+
+
+.structure {
+        font-size: 11vw !important;
+    }
+    
+    h1 { font-size: 8vw !important; }
+    h2 { font-size: 7vw !important; }
+    h3 { font-size: 6vw !important; }
+    
+    p, .brbr2 p {
+        font-size: 4.5vw !important;
+    }
+    .arr {
+        height: 74px !important;
+        font-size: 17px !important;
+    }
+    .arrow-but {
+        height: 74px !important;
+        width: 74px !important;
+    }
+
+
     /* COOKIE */
     #cookie-banner {
         display: block !important;

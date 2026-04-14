@@ -123,7 +123,7 @@
     gap: 12px;
     padding: 18px 20px;
     font-family: 'medium';
-    font-size: 4vw;
+    font-size: 6vw;
     color: #F9F9F9;
     text-decoration: none;
     border-bottom: 1px solid rgba(249, 249, 249, 0.1);
@@ -136,7 +136,7 @@
 
 .bm-num {
     font-family: 'regular';
-    font-size: 10px;
+    font-size: 4vw;
     color: #D04200;
     flex-shrink: 0;
 }
@@ -205,23 +205,23 @@
     h2 { font-size: 6.5vw !important; }
     h3 { font-size: 5.5vw !important; }
 
-    .structure         { font-size: 10vw !important; }
-    .text h3           { font-size: 5.5vw !important; }
-    .text p            { font-size: 4.5vw !important; }
+    .structure         { font-size: 25vw !important; }
+    .text h3           { font-size: 8.5vw !important; }
+    .text p            { font-size: 5.5vw !important; }
     .brbr2 p           { font-size: 4vw !important; }
 
-    .sixth-title       { font-size: 7vw !important; }
-    .sixth-label       { font-size: 3.5vw !important; }
-    .sixth-links a     { font-size: 4vw !important; }
-    .sixth-nav a       { font-size: 4vw !important; }
-    .sixth-copy        { font-size: 3vw !important; }
+    .sixth-title       { font-size: 9vw !important; }
+    .sixth-label       { font-size: 5vw !important; }
+    .sixth-links a     { font-size: 5vw !important; }
+    .sixth-nav a       { font-size: 5vw !important; }
+    .sixth-copy        { font-size: 4.5vw !important; }
 
     .arr span          { font-size: 17px !important; }
-    .title             { font-size: 4.5vw !important; }
-    .num               { font-size: 4.5vw !important; }
+    .title             { font-size: 5.5vw !important; }
+    .num               { font-size: 5.5vw !important; }
 
-    .page-title span   { font-size: 3.5vw !important; font-weight: 400 !important; font-family: 'regular' !important; }
-    .page-title p      { font-size: 4vw !important; font-family: 'medium' !important; }
+    .page-title span   { font-size: 5vw !important; font-weight: 400 !important; font-family: 'regular' !important; }
+    .page-title p      { font-size: 6vw !important; font-family: 'medium' !important; }
 
     .trisda {
         margin-top: 11vw;
@@ -406,7 +406,7 @@
 
     .services3 .title {
         grid-column: 2; grid-row: 1;
-        font-size: 4.5vw !important;
+        font-size: 6.5vw !important;
         color: white !important;
     }
 
@@ -426,8 +426,9 @@
     .services3 .service-body.open { display: block; }
 
     .services3 .service-body p {
+        padding: 0;
         margin-left: 0;
-        font-size: 3.5vw !important;
+        font-size: 5vw !important;
     }
 
     /* FOURTH SCREEN */
@@ -510,6 +511,7 @@
         flex-direction: column;
         gap: 16px;
         align-items: flex-start;
+        margin-top: 0;
     }
 
     .sixth-label {
@@ -603,7 +605,7 @@
         width: calc(100vw - 32px);
         right: 16px;
         top: 16px;
-        height: calc(100dvh - 32px);
+        
     }
 
     .burger { margin-left: 0; }
@@ -688,7 +690,7 @@
 
     .marka { margin: 0; }
 
-    .service-body p { font-size: 3.5vw !important; }
+    .service-body p { font-size: 4.5vw !important; }
 
     .lini { margin-top: 48px; }
 
@@ -776,7 +778,9 @@
         flex: 1;
         min-width: 0;
     }
-
+.process {
+    display: none;
+}
     /* GALLERY */
     .proj-image,
     .work-images {
@@ -787,9 +791,9 @@
     }
 
     /* ТИПОГРАФИКА 480px — чисто vw и px */
-    .structure    { font-size: 11vw !important; }
+    .structure    { font-size: 15vw !important; }
     h1            { font-size: 8vw !important; }
-    h2            { font-size: 7vw !important; }
+    h2            { font-size: 9vw !important; }
     h3            { font-size: 6vw !important; }
     p, .brbr2 p   { font-size: 4.5vw !important; }
 

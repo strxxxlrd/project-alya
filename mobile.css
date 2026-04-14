@@ -188,18 +188,6 @@
 .back-to-top-btn svg { transition: transform 0.3s ease; }
 .back-to-top-btn:hover svg { transform: translateY(-4px); }
 
-@media (max-width: 480px) {
-    .back-to-top-btn {
-        width: 58px;
-        height: 58px;
-    }
-    .back-to-top-btn svg {
-        width: 28px;
-        height: 28px;
-    }
-}
-
-
 /* ================================================ */
 /* MOBILE — 768px */
 /* ================================================ */
@@ -240,15 +228,13 @@
     .page-title span { font-size: clamp(1.125rem, 3.5vw, 1.125rem); font-weight: 400 !important; font-family: 'regular' !important; }
     .page-title p    { font-size: clamp(1.125rem, 4vw, 1.25rem); font-family: 'medium'; }
 
+    .trisda {
+        margin-top: 11vw;
+        gap: 8vw;
+    }
 
-.trisda{
-    margin-top: 11vw;
-    gap: 8vw;
-}
+    .proj-num { margin-bottom: 4vw; }
 
-.proj-num{
-    margin-bottom: 4vw;
-}
     /* ГЛОБАЛЬНЫЕ */
     .desktop { display: none; }
     .mobile  { display: flex; }
@@ -340,7 +326,7 @@
         margin-left: 0;
         width: 100%;
         height: auto;
-        margin-top: 6.8rem;
+        margin-top: 2rem;
     }
 
     .about-inner {
@@ -353,11 +339,56 @@
         margin-top: 2rem;
     }
 
+    /* services аккордеон на мобайле */
+    .services .service-item {
+        display: grid;
+        grid-template-columns: 4rem 1fr auto;
+        gap: 0;
+    }
+
+    .services .service-header {
+        display: contents !important;
+    }
+
+    .services .num,
+    .services .title {
+        padding: 1.5rem 0;
+    }
+
+    .services .num {
+        padding-right: 1rem;
+        white-space: nowrap;
+    }
+
+    .services .title {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .services .icon {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: end;
+        align-self: center;
+        padding: 1.5rem 0;
+    }
+
+    .services .service-body {
+        display: none;
+        grid-column: 2;
+        grid-row: 2;
+        padding: 0 0 1.5rem;
+    }
+
+    .services .service-body.open {
+        display: block;
+    }
+
     /* THIRD SCREEN */
     .third-screen {
         display: flex;
         flex-direction: column;
-        margin-top: -7rem;
+        margin-top: 0;
         padding: 1rem;
     }
 
@@ -372,8 +403,61 @@
     .text3 { flex-direction: column !important; }
     .text3, .services3 { width: 100% !important; }
 
+    .services3 { margin-top: 2rem; }
+
+    /* services3 аккордеон на мобайле */
+    .services3 .service-item {
+        display: grid;
+        grid-template-columns: 4.5rem 1fr auto;
+        gap: 0;
+    }
+
+    .services3 .service-header {
+        display: contents !important;
+    }
+
+    .services3 .num,
+    .services3 .title {
+        padding: 1.5rem 0;
+    }
+
+    .services3 .num {
+        padding-right: 1rem;
+    }
+
+    .services3 .title {
+        grid-column: 2;
+        grid-row: 1;
+        font-size: clamp(1.25rem, 4vw, 1.5rem);
+        color: white !important;
+    }
+
+    .services3 .icon {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: end;
+        align-self: center;
+        padding: 1.5rem 0;
+    }
+
+    .services3 .service-body {
+        display: none;
+        grid-column: 2;
+        grid-row: 2;
+        padding: 0 0 1.5rem;
+    }
+
+    .services3 .service-body.open {
+        display: block;
+    }
+
+    .services3 .service-body p {
+        margin-left: 0;
+        font-size: clamp(1rem, 3.5vw, 1.125rem) !important;
+    }
+
     /* FOURTH SCREEN */
-    .fourth-screen { margin-top: 6.88rem; }
+    .fourth-screen { margin-top: 4rem; }
 
     .imglogo { min-height: 50vh; }
     .imglogo img { width: 50%; height: auto; }
@@ -425,7 +509,6 @@
         top: 47.5px; left: 0;
         width: 0.0625rem; height: 0.75rem;
         background: rgba(249, 249, 249, 0.3);
-        padding-bottom: 1rem;
     }
 
     .project-caption::after {
@@ -434,11 +517,10 @@
         top: 47.5px; right: 0;
         width: 0.0625rem; height: 0.75rem;
         background: rgba(249, 249, 249, 0.3);
-        padding-bottom: 1rem;
     }
 
     /* SIXTH SCREEN */
-    .sixth-screen { margin-top: 6.88rem; }
+    .sixth-screen { margin-top: 4rem; }
 
     .sixth-top {
         display: flex;
@@ -450,19 +532,17 @@
     .sixth-title { margin-left: 0; text-align: left; }
 
     .sixth-contacts {
-        align-items: flex-start;
         display: flex;
         flex-direction: column;
         gap: 1rem;
+        align-items: flex-start;
     }
 
     .sixth-label {
-        display: flex;
-        text-align: left;
         margin-left: 0;
-        padding-top: 0;
-        margin-top: -1rem;
-        margin-bottom: 4rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        opacity: 0.4;
     }
 
     .sixth-links {
@@ -472,7 +552,7 @@
         align-items: center;
         align-self: stretch;
         margin-left: 0;
-        margin-top: -1rem;
+        margin-top: 0;
     }
 
     .sixth-image {
@@ -580,8 +660,8 @@
         margin-top: -3rem;
         display: flex;
         flex-direction: row;
-        padding: clamp(1rem, 2.08vw, 2.5rem);
-        margin-bottom: 6.125rem;
+        padding: 1rem;
+        margin-bottom: 4rem;
     }
 
     /* GALLERY */
@@ -620,106 +700,33 @@
         margin-right: 0 !important;
     }
 
-    .services3 .service-item {
-        display: grid;
-        
-        gap: 0;
-    }
+    .marka { margin: 0; }
 
-    .services3 .service-header {
-        display: contents !important;
-    }
-
-    .services3 .num,
-    .services3 .title,
-    .services3 .icon {
-        padding: 2rem 0;
-    }
-
-    .services3 .num {
-        padding-right: 1rem;
-    }
-
-    .services3 .icon {
-        padding-left: 1rem;
-    }
-
-    .services3 .service-body {
-        grid-column: 2;
-        padding: 0 0 0;
-    }
-
-    
-    .marka{
-        margin: 0;
-    }
-
-    .service-body  { padding: 0 0 1rem 4rem; }
     .service-body p { font-size: clamp(1.125rem, 3.5vw, 1.125rem) !important; }
-    .service-header { gap: 0; }
-
-    .services3 .title { font-size: clamp(1.75rem, 4vw, 1.75rem); color: white !important; }
-    .services3 .num   { font-size: clamp(1.75rem, 4vw, 1.75rem); }
-    .services3 .service-body p { margin-left: 0; font-size: clamp(1.25rem, 3.5vw, 1.25rem) !important; }
 
     .lini { margin-top: 3rem; }
 
-    .screen { margin-bottom: -1rem; }
+    .screen { margin-bottom: 3rem; }
 
     .back-to-top-container { display: flex; }
+
+    .back-to-top-btn {
+        width: 58px;
+        height: 58px;
+    }
+
+    .back-to-top-btn svg {
+        width: 28px;
+        height: 28px;
+    }
 }
 
-.services .service-item {
-        grid-template-columns: auto 1fr;
-    }
-
-    .services .title {
-        grid-column: 2;
-        grid-row: 1;
-    }
-
-    .services .icon {
-        grid-column: 2;
-        grid-row: 1;
-        justify-self: end;
-        align-self: center;
-    }
-
-    .services .service-body {
-        grid-column: 2;
-        grid-row: 2;
-    }
-
-    
-
-
-    .services3 .title {
-        grid-column: 2;
-        grid-row: 1;
-    }
-
-    .services3 .icon {
-        grid-column: 2;
-        grid-row: 1;
-        justify-self: end;
-        align-self: center;
-    }
-
-    .services3 .service-body {
-        grid-column: 2;
-        grid-row: 2;
-    }
-    .services3{
-        margin-top: 5rem;
-    }
 /* ================================================ */
 /* MOBILE — 480px */
 /* ================================================ */
 
 @media (max-width: 480px) {
-.services3 .service-item {
-        grid-template-columns: 5rem 1fr auto;
-    }
+
     html, body {
         overflow-x: hidden !important;
         max-width: 100% !important;

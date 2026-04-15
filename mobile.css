@@ -458,6 +458,7 @@
     }
 
     .services3 .service-body {
+        width: 90%;
         display: none;
         grid-column: 2; grid-row: 2;
         padding: 0 0 24px;

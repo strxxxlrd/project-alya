@@ -44,7 +44,7 @@ const translations = {
         'service-02-title': 'Корпоративний сайт',
         'service-02-title-mobile': 'Корпоративний сайт',
         'service-02-desc': 'Підходить для компаній, яким важливо повноцінно представити<br/>бізнес в інтернеті. На такому сайті можна розповісти про компанію,<br/> послуги, проєкти та створити професійний онлайн-імідж',
-        'service-02-desc-mobile': 'Підходить для компаній, яким<br/> важливо повноцінно<br/> представити бізнес в інтернеті.<br/> На такому сайті можна<br/> розповісти про компанію, послуги,<br/> проєкти та створити <br/>професійний онлайн-імідж',
+        'service-02-desc-mobile': 'Підходить для компаній, яким важливо повноцінно представити бізнес в інтернеті. На такому сайті можна розповісти про компанію, послуги, проєкти та створити професійний онлайн-імідж',
 
         'service-03-title': 'Редизайн сайту',
         'service-03-title-mobile': 'Редизайн сайту',
@@ -250,7 +250,7 @@ const translations = {
         'service-02-title': 'Corporate website',
         'service-02-title-mobile': 'Corporate website',
         'service-02-desc': 'Suitable for companies that need a complete online presence.<br/> Allows you to present your business, services, and projects, and<br/> build a strong professional image',
-        'service-02-desc-mobile': 'Suitable for companies that need a complete online presence.<br/> Allows you to present your business, services, and projects, and build a strong professional image',
+        'service-02-desc-mobile': 'Suitable for companies that need<br/> a complete online presence.<br/> Allows you to present your business, services, and projects, and build a strong professional image',
 
         'service-03-title': 'Website redesign',
         'service-03-title-mobile': 'Website redesign',

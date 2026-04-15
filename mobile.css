@@ -7,11 +7,7 @@
 
 
 
-.burger{
-    width: 14vw;
-    height: 14vw;
-    
-}
+
 
 
 .burger-menu {
@@ -211,7 +207,11 @@
 /* ================================================ */
 
 @media (max-width: 768px) {
-
+.burger{
+    width: 14vw;
+    height: 14vw;
+    
+}
     html {
         font-size: 16px !important;
         -webkit-text-size-adjust: none !important;

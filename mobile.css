@@ -271,12 +271,12 @@
     .hero {
         flex-direction: column;
         align-items: flex-start;
-        min-height: 100dvh;
+        
         padding: 16px;
         padding-bottom: 16px;
         gap: 32px;
         margin-top: 0;
-        padding-top: 96px;
+       
     }
 
     .hero section {
@@ -482,6 +482,7 @@
     .fifth-bottom section .project-item img { height: 192px; object-fit: cover; }
 
     .fifth-footer {
+        margin-top: 0;
         margin-left: 0;
         padding-bottom: 0;
         width: 100%;
@@ -491,10 +492,11 @@
     /* PROJECT CAPTIONS */
     .project-caption {
         position: relative;
-        border-bottom: 1px solid rgba(249, 249, 249, 0.3);
+        border-bottom: 1px solid rgba(249, 249, 249, 0.15);
         padding-top: 16px;
         margin-top: 12px;
         padding-bottom: 19px;
+        
     }
 
     .project-caption::before {
@@ -502,7 +504,7 @@
         position: absolute;
         top: 47.5px; left: 0;
         width: 1px; height: 13px;
-        background: rgba(249, 249, 249, 0.3);
+        background: rgba(249, 249, 249, 0.15);
     }
 
     .project-caption::after {
@@ -510,7 +512,7 @@
         position: absolute;
         top: 47.5px; right: 0;
         width: 1px; height: 13px;
-        background: rgba(249, 249, 249, 0.3);
+        background: rgba(249, 249, 249, 0.15);
     }
 
     /* SIXTH SCREEN */
@@ -893,7 +895,17 @@
         position: absolute;
         top: 0; right: 0;
         width: 1px; height: 14px;
-        background: #4d4d4d;
+        background: rgba(249, 249, 249, 0.15);
+    }
+
+    .work-meta::before {
+        
+        background: rgba(249, 249, 249, 0.15);
+    }
+
+
+    .work-meta{
+        border-top: 1px solid rgba(249, 249, 249, 0.15);
     }
 
     .burger-menu {

@@ -240,6 +240,21 @@
         max-width: 100% !important;
     }
 
+
+.second-screen {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about {
+        order: 1;
+    }
+
+    .about-us {
+        order: 2;
+    }
+
+
     /* FIRST SCREEN */
     .first-screen {
         position: relative;
@@ -388,6 +403,10 @@
     .text3 { flex-direction: column !important; }
     .text3, .services3 { width: 100% !important; }
 
+    .text3 span{
+        font-size: 5vw;
+    }
+
     .services3 { margin-top: 32px; }
 
     /* services3 аккордеон */
@@ -475,14 +494,14 @@
         border-bottom: 1px solid rgba(249, 249, 249, 0.3);
         padding-top: 16px;
         margin-top: 12px;
-        padding-bottom: 32px;
+        padding-bottom: 20.5px;
     }
 
     .project-caption::before {
         content: '';
         position: absolute;
         top: 47.5px; left: 0;
-        width: 1px; height: 12px;
+        width: 1px; height: 13px;
         background: rgba(249, 249, 249, 0.3);
     }
 
@@ -490,7 +509,7 @@
         content: '';
         position: absolute;
         top: 47.5px; right: 0;
-        width: 1px; height: 12px;
+        width: 1px; height: 13px;
         background: rgba(249, 249, 249, 0.3);
     }
 
@@ -890,5 +909,5 @@
         align-items: flex-start;
     }
 
-    .project-caption { padding-bottom: 32px; }
+    
 }

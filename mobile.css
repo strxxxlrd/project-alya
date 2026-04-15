@@ -8,8 +8,8 @@
 
 
 .burger{
-    width: 12vw;
-    height: 12vw;
+    width: 14vw;
+    height: 14vw;
     
 }
 
@@ -54,8 +54,8 @@
 
 .bm-close {
     position: relative;
-    width: 52px;
-    height: 52px;
+    width: 14vw;
+    height: 14vw;
     background: rgba(255, 255, 255, 0.15);
     border: none;
     border-radius: 9px;
@@ -127,6 +127,8 @@
     border: 1px solid rgba(249, 249, 249, 0.1);
     border-radius: 8px;
     overflow: hidden;
+    margin-top: 7vh;
+    margin-bottom: 8vh;
 }
 
 .bm-link {
@@ -395,6 +397,7 @@
     }
 
     .services .service-body {
+        width: 95%;
         display: none;
         grid-column: 2; grid-row: 2;
         padding: 0 0 24px;
@@ -463,6 +466,7 @@
     .services3 .service-body.open { display: block; }
 
     .services3 .service-body p {
+        
         padding: 0;
         margin-left: 0;
         font-size: 5vw !important;
@@ -625,8 +629,9 @@
         transition: color 0.3s ease;
         display: inline-block;
     }
-    .sixth-nav a ::after{
-        
+    .page-img img:last-child{
+        border-radius:0.25rem ;
+        padding: 0;
     }
 
 
@@ -655,6 +660,50 @@
 
     .line-divider { margin-top: -128px; }
 
+    .line{
+        width: 20px;
+    }
+.corner-box i::before {
+    content: '';
+    position: absolute;
+    top: 0px; right: 0px;
+    width: 5px; height: 5px;
+    border-top: 1px solid rgba(249,249,249,0.7);
+    border-right: 1px solid rgba(249,249,249,0.7);
+}
+
+
+.proj-images-left{
+    gap: 1vw;
+}
+
+
+.corner-box i::after {
+    content: '';
+    position: absolute;
+    bottom: 0px; left: 0px;
+    width: 5px; height: 5px;
+    border-bottom: 1px solid rgba(249,249,249,0.7);
+    border-left: 1px solid rgba(249,249,249,0.7);
+}
+
+.corner-box::before {
+    content: '';
+    position: absolute;
+    top: 0px; left: 0px;
+    width: 5px; height: 5px;
+    border-top: 1px solid rgba(249,249,249,0.7);
+    border-left: 1px solid rgba(249,249,249,0.7);
+}
+
+.corner-box::after {
+    content: '';
+    position: absolute;
+    bottom: 0px; right: 0px;
+    width: 5px; height: 5px;
+    border-bottom: 1px solid rgba(249,249,249,0.7);
+    border-right: 1px solid rgba(249,249,249,0.7);
+}
     /* BURGER */
     .burger-menu {
         width: calc(100vw - 32px);

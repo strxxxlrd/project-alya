@@ -245,7 +245,7 @@ const translations = {
         'service-01-title': 'Landing Page',
         'service-01-title-mobile': 'Landing Page',
         'service-01-desc': 'Suitable for launching a new product, running ad campaigns, or presenting a<br/> specific service. Helps clearly communicate your offer, highlight key benefits,<br/> and guide users toward conversion',
-        'service-01-desc-mobile': 'Suitable for launching a new product, running ad campaigns, or presenting a<br/> specific service. Helps clearly communicate your offer, highlight key benefits,<br/> and guide users toward conversion',
+        'service-01-desc-mobile': 'Suitable for launching a new product, running ad campaigns, or presenting a specific service. Helps clearly communicate your offer, highlight key benefits, and guide users toward conversion',
 
         'service-02-title': 'Corporate website',
         'service-02-title-mobile': 'Corporate website',
@@ -370,9 +370,9 @@ const translations = {
         'project-02-task': 'Create a website that clearly explains the value<br /> of the course, structures the information, and<br /> guides the user toward purchase',
         'project-02-task-mobile': 'Create a website that clearly explains the value of the course, structures the information, and guides the user toward purchase',
         'project-02-solution': 'The visual concept is built around a branded 3D <br/>character that enhances recognition and is used<br/> as a navigation element. Orange is used as an<br/> accent color for key actions – buttons, pricing,<br/> and important sections –helping to focus user<br/> attention. The structure includes: about the<br/> company, course overview, program,<br/> testimonials, pricing options, FAQ, and<br/> a contact form',
-        'project-02-solution-mobile': 'The visual concept is built around a branded 3D <br/>character that enhances recognition and is used<br/> as a navigation element. Orange is used as an<br/> accent color for key actions – buttons, pricing,<br/> and important sections –helping to focus user<br/> attention. The structure includes: about the<br/> company, course overview, program,<br/> testimonials, pricing options, FAQ, and<br/> a contact form',
+        'project-02-solution-mobile': 'The visual concept is built around a branded 3D character that enhances recognition and is used as a navigation element. Orange is used as an accent color for key actions – buttons, pricing, and important sections –helping to focus user attention. The structure includes: about the company, course overview, program, testimonials, pricing options, FAQ, and a contact form',
         'project-02-result': 'A structured landing page that consistently<br/> guides the user from introduction to the product<br/> through to submitting an application',
-        'project-02-result-mobile': 'A structured landing page that consistently<br/> guides the user from introduction to the product<br/> through to submitting an application',
+        'project-02-result-mobile': 'A structured landing page that consistently guides the user from introduction to the product through to submitting an application',
 
         // (project-03, 04, 05 — аналогічно, текст повністю збігається з десктопом)
         'project-03-desc': 'Multi-page website for presenting the club<br/> and booking training sessions',

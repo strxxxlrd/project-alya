@@ -141,6 +141,12 @@
     letter-spacing: -0.02em;
 }
 
+
+
+
+
+
+
 .bm-link:last-child { border-bottom: none; }
 .bm-link:hover { background: rgba(249, 249, 249, 0.05); }
 
@@ -212,6 +218,26 @@
     height: 14vw;
     
 }
+
+    #cookie-banner {
+        left: 20px !important;
+        right: 20px !important;
+        width: auto !important;
+        max-width: calc(100vw - 40px) !important;
+        box-sizing: border-box !important;
+    }
+
+    .cookie-buttons {
+        display: flex;
+        gap: 8px;
+    }
+
+    .cookie-buttons button {
+        flex: 1;
+        min-width: 0;
+        padding: 14px 16px;
+    }
+
 .bm-num {
     font-family: 'regular';
     font-size: 4vw;

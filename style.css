@@ -177,9 +177,9 @@ a.arr, a.arrow-but {
   pointer-events: all;
 }
 
-#cookie-banner h2 {
+#cookie-banner h1 {
   margin: 0 0 20px 0;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 550;
   line-height: 130%;

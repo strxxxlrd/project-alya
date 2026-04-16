@@ -50,8 +50,8 @@
 
 .bm-close {
     position: relative;
-    width: 14vw;
-    height: 14vw;
+    width: 52px;
+    height: 52px;
     background: rgba(255, 255, 255, 0.15);
     border: none;
     border-radius: 9px;
@@ -133,7 +133,7 @@
     gap: 12px;
     padding: 18px 20px;
     font-family: 'medium';
-    font-size: 6vw;
+    
     color: #F9F9F9;
     text-decoration: none;
     border-bottom: 1px solid rgba(249, 249, 249, 0.1);
@@ -146,7 +146,7 @@
 
 .bm-num {
     font-family: 'regular';
-    font-size: 4vw;
+    font-size: 1rem;
     color: #D04200;
     flex-shrink: 0;
 }
@@ -211,6 +211,37 @@
     width: 14vw;
     height: 14vw;
     
+}
+.bm-num {
+    font-family: 'regular';
+    font-size: 4vw;
+    color: #D04200;
+    flex-shrink: 0;
+}
+
+.bm-close {
+    position: relative;
+    width: 14vw;
+    height: 14vw;
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.bm-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 20px;
+    font-family: 'medium';
+    font-size: 6vw;
+    color: #F9F9F9;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(249, 249, 249, 0.1);
+    transition: background 0.3s;
+    letter-spacing: -0.02em;
 }
     html {
         font-size: 16px !important;

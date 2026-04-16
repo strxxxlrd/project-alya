@@ -1031,6 +1031,26 @@
         transition: all 0.25s ease;
         
     }
+
+    #cookie-banner h1 {
+  margin: 0 0 20px 0;
+  font-size: 6.5vw!important;
+  font-style: normal;
+  font-weight: 550;
+  line-height: 130%;
+  letter-spacing: -0.0175rem;
+  color: #ffffff;
+  text-align: left;
+  font-family: "medium";
+}
+#cookie-banner a {
+    display: inline; /* не block! */
+  color: #ff6a00;
+  font-size: 4.5vw!important;
+}
+
+
+
     .cookie-buttons {
         width: 100%;
     }
@@ -1039,7 +1059,7 @@
         flex: 1;
         padding: 14px 16px;
     }
-    
+
     /* WORKS */
     .work-meta::after {
         content: '';

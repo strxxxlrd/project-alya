@@ -1029,9 +1029,17 @@
         font-weight: 500;
         cursor: pointer;
         transition: all 0.25s ease;
-        min-width: 144px;
+        
     }
-
+    .cookie-buttons {
+        width: 100%;
+    }
+.cookie-buttons button {
+        min-width: 0;
+        flex: 1;
+        padding: 14px 16px;
+    }
+    
     /* WORKS */
     .work-meta::after {
         content: '';

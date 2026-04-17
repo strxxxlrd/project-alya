@@ -840,6 +840,9 @@
         right: 20px;
         margin: 0 auto;
     }
+    canvas {      /* или просто canvas, если у тебя только один */
+        display: none !important;
+    }
 
     /* OVERFLOW FIX */
     .first-screen,

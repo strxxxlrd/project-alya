@@ -3,6 +3,12 @@
 // ================================================
 const translations = {
     uk: {
+
+        'title1':'12LAO Studio — розробка лендінгів та корпоративних сайтів',
+        'title2':'Проєкти — 12LAO Studio | Маркетинг, інтер’єр нерухомість, спорт',
+        
+        
+
         // Works page project names
         'project-01-p1': 'Маркетингова агенція',
         'project-01-p1-mobile': 'Маркетингова агенція',
@@ -213,6 +219,8 @@ const translations = {
     },
 
     en: {
+        'title1':'12LAO Studio — Landing Pages & Corporate Website Design',
+        'title2':'Projects — 12LAO Studio | Marketing, Interior,Real Estate, Sport',
         // (англійська частина — повністю ідентично десктопу)
         'project-01-p1': 'Marketing Agency',
         'project-01-p1-mobile': 'Marketing Agency',

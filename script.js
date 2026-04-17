@@ -661,7 +661,69 @@ if (backToTopBtn) {
     });
 }
 
-
+const canvas = document.createElement('canvas');
+canvas.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:99999';
+document.body.appendChild(canvas);
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+window.addEventListener('resize', () => {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+});
+const MAX = 28;
+const trail = [];
+let mx = -999, my = -999;
+let lastMove = 0;
+document.addEventListener('mousemove', e => {
+  mx = e.clientX; my = e.clientY;
+  lastMove = Date.now();
+  trail.push({ x: mx, y: my, t: lastMove });
+});
+function draw() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  const now = Date.now();
+  // drop old points fast (thread disappears quickly)
+  while (trail.length > 0 && now - trail[0].t > 120) trail.shift();
+  if (trail.length > MAX) trail.shift();
+  const idle = now - lastMove > 80;
+  if (!idle && trail.length >= 2) {
+    // outer glow
+    ctx.save();
+    ctx.strokeStyle = 'rgba(220,30,20,0.18)';
+    ctx.lineWidth = 10;
+    ctx.lineCap = 'round';
+    ctx.filter = 'blur(5px)';
+    ctx.beginPath();
+    ctx.moveTo(trail[0].x, trail[0].y);
+    for (let i = 1; i < trail.length; i++) ctx.lineTo(trail[i].x, trail[i].y);
+    ctx.stroke();
+    ctx.restore();
+    // core thread — thin bright line
+    ctx.save();
+    ctx.strokeStyle = 'rgba(255,100,80,0.9)';
+    ctx.lineWidth = 1;
+    ctx.lineCap = 'round';
+    ctx.beginPath();
+    ctx.moveTo(trail[0].x, trail[0].y);
+    for (let i = 1; i < trail.length; i++) ctx.lineTo(trail[i].x, trail[i].y);
+    ctx.stroke();
+    ctx.restore();
+  }
+  // tip dot — always visible
+  if (mx > -900) {
+    const grd = ctx.createRadialGradient(mx, my, 0, mx, my, idle ? 3 : 5);
+    grd.addColorStop(0, 'rgba(255,220,210,1)');
+    grd.addColorStop(0.5, 'rgba(220,40,20,0.8)');
+    grd.addColorStop(1, 'rgba(200,0,0,0)');
+    ctx.beginPath();
+    ctx.arc(mx, my, idle ? 3 : 5, 0, Math.PI * 2);
+    ctx.fillStyle = grd;
+    ctx.fill();
+  }
+  requestAnimationFrame(draw);
+}
+draw();
 
 
 const video = document.getElementById('myVideo');
@@ -708,3 +770,7 @@ function toggleProc(el) {
     el.classList.toggle('active');
     body.classList.toggle('open');
 }
+
+
+
+

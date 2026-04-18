@@ -267,7 +267,7 @@ const translations = {
 
         'process': '[ Process ]',
         'process-mobile': '[ Process ]',
-        'process-title': 'A clear process without chaos. You always<br/> know what\'s happening at every stage. There is<br/> always a specific deadline',
+        'process-title': 'A clear process without chaos. You always know what\'s happening at every stage. There is always a specific deadline',
         'process-title-mobile': 'A clear process without chaos. You always know what\'s happening at every stage.',
         'process-title-p': '[ There is always a specific deadline ]',
         'process-title-p-mobile': '[ There is always a specific deadline ]',
@@ -562,7 +562,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (cursorBtn) {
         let currentHref = '#';
-        const originalText = cursorBtn.textContent;
+        
 
         document.addEventListener('mousemove', (e) => {
             cursorBtn.style.left = e.clientX + 'px';
@@ -579,7 +579,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 currentHref = link || '#';
                 cursorBtn.classList.add('visible');
                 if (isDevelopmentProject) {
-                    cursorBtn.textContent = 'В роботі → ';
+                    cursorBtn.textContent = currentLang === 'uk' ? 'В роботі →' : 'In progress →';
                     cursorBtn.classList.add('in-development');
                 } else {
                     cursorBtn.textContent = originalText;
